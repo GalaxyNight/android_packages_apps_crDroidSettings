@@ -2789,4 +2789,10 @@
     <!-- Ambient Display Swipe Gesture -->
     <string name="ambient_swipe_title">Ambient display swipe</string>
     <string name="ambient_swipe_summary">Allow waking up device by swiping up or down on Ambient Display</string>
+
+    <!-- QS media player -->
+    <string name="qs_media">QuickSettings Media</string>
+    <string name="qs_media_player_title">Media player</string>
+    <string name="qs_media_player_summary_on">Show media player in QS\nRequires a SystemUI restart</string>
+    <string name="qs_media_player_summary_off">Show media player as a notification\nRequires a SystemUI restart</string>
 </resources>

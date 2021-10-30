@@ -2467,4 +2467,9 @@
     <!-- Ambient Display Swipe Gesture -->
     <string name="ambient_swipe_title">アンビエント表示をスワイプ</string>
     <string name="ambient_swipe_summary">アンビエント表示で上下にスワイプすると画面をオンにします</string>
+    <!-- QS media player -->
+    <string name="qs_media">クイック設定のメディア</string>
+    <string name="qs_media_player_title">メディアプレイヤー</string>
+    <string name="qs_media_player_summary_on">メディアプレイヤーをクイック設定で表示します\nSystemUIの再起動が必要です</string>
+    <string name="qs_media_player_summary_off">メディアプレイヤーを通知で表示します\nSystemUIの再起動が必要です</string>
 </resources>
