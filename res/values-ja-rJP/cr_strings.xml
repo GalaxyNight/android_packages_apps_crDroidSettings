@@ -2472,4 +2472,7 @@
     <string name="qs_media_player_title">メディアプレイヤー</string>
     <string name="qs_media_player_summary_on">メディアプレイヤーをクイック設定で表示します\nSystemUIの再起動が必要です</string>
     <string name="qs_media_player_summary_off">メディアプレイヤーを通知で表示します\nSystemUIの再起動が必要です</string>
+    <!-- Per App Volume Control -->
+    <string name="show_app_volume_title">アプリ毎の音量を表示します</string>
+    <string name="show_app_volume_summary">音量パネルでアプリ毎の音量を表示します</string>
 </resources>
