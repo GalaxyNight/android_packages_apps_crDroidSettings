@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -348,8 +348,8 @@
     <string name="double_tap_sleep_anywhere_title">Dodirni za stanje mirovanja</string>
     <string name="double_tap_sleep_anywhere_summary">Dvaput dodirnite bilo gdje na zaključanom zaslonu za zaključavanje uređaja</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Izbornik isključivanja</string>
-    <string name="lockscreen_enable_power_menu_summary">Dopusti pristup izborniku isključivanja na zaključanom zaslonu</string>
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
     <string name="lockscreen_secure_power_menu_title">Siguran izbornik Power</string>
     <string name="lockscreen_secure_power_menu_summary">Dopustite radnju izbornika Power tek nakon provjere autentičnosti</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Brzina lava lampe</string>
     <string name="pulse_solid_units_count">Broj punih crta</string>
     <string name="pulse_solid_units_opacity">Neprozirnost punih crta</string>
+    <string name="pulse_solid_units_rounded_title">Zaobljeni kutevi</string>
+    <string name="pulse_solid_units_rounded_summary">Čvrste linije sa zaobljenim vrhom</string>
     <string name="pulse_solid_dimen_category">Postavke načina punih crta</string>
     <string name="fling_lavalamp_color_from">Boja početka lava lampe</string>
     <string name="fling_lavalamp_color_to">Boja završetka Lava Lamp</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Stil baterije</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona u portretu</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikona u pejzažu</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Ikona pejzažno (desno)</string>
+    <string name="status_bar_battery_style_icon_landscape">Ikona pejzažno (lijevo)</string>
     <string name="status_bar_battery_style_circle">Krug</string>
     <string name="status_bar_battery_style_dotted_circle">Točkasti krug</string>
-    <string name="status_bar_battery_style_square">Kvadrat</string>
-    <string name="status_bar_battery_style_solid">Puna</string>
+    <string name="status_bar_battery_style_filled_circle">Filled circle</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Skriveno</string>
     <string name="status_bar_battery_style_tile_title">Zamijeni pločicu baterije</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Postotak baterije</string>
     <string name="status_bar_battery_percentage_default">Skriveno</string>
     <string name="status_bar_battery_percentage_text_inside">Unutar ikone</string>
-    <string name="status_bar_battery_percentage_text_next">Pored ikone</string>
+    <string name="status_bar_battery_percentage_text_next_right">Pored ikone (desno)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Pored ikone (lijevo)</string>
     <string name="status_bar_battery_text_position_title">Položaj postotka baterije</string>
     <string name="status_bar_battery_text_position_left">Lijevo od ikone</string>
     <string name="status_bar_battery_text_position_right">Desno od ikone</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Ambijentalni zaslon</string>
     <string name="doze_display_summary">Konfigurirajte postavke za ambijentalni prikaz</string>
     <string name="doze_sensor_title">Sensor based</string>
+    <string name="raise_to_wake_title">Wake up</string>
+    <string name="raise_to_wake_summary">Wake up the device instead of pulsing notifications</string>
     <string name="tilt_title">Tilt</string>
     <string name="tilt_summary">Pulse notifications on tilt</string>
     <string name="pickup_title">Pick up</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Share crDroid</string>
     <string name="share_crdroid_summary">Let others know about crDroid</string>
+    <string name="share_message">Check out what #crDroid Android is all about @ https://crdroid.net/</string>
     <string name="share_chooser_title">Share crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Charging sounds</string>
     <string name="charging_sounds_settings_summary">Customize sound played when connecting or disconnecting a power source</string>
-    <string name="charging_sounds_enabled_title">Enable</string>
+    <string name="charging_sounds_enabled_title">Zvuk punjenja baterije</string>
     <string name="charging_sounds_enabled_summary">Play a sound when connecting or disconnecting a power source</string>
     <string name="power_notifications_vibrate_title">Vibrate</string>
-    <string name="charging_sounds_ringtone_title">Notification sound</string>
     <string name="charging_sounds_ringtone_silent">Silent</string>
+    <string name="wired_charging_sounds_title">Žično punjenje</string>
+    <string name="wireless_charging_sounds_title">Bežično punjenje</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Wakelock blocker</string>
     <string name="wakelock_blocker_summary">Block system wakelocks</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Medium</string>
     <string name="rounded_high">High</string>
     <string name="rounded_extreme">Extreme</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Stil statusa signala</string>
+    <string name="signal_style_summary">Postavite prilagođeni stil ikone signala</string>
+    <string name="wifi_style_title">Stil statusa Wi-Fi-ja</string>
+    <string name="wifi_style_summary">Postavite prilagođeni stil ikone Wi-Fi-ja</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">This will reset battery history stats. Would you like to continue?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
     <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">VPN alert</string>
-    <string name="qs_footer_warnings_summary">Display alert when network is monitored or connected via VPN</string>
+    <string name="qs_footer_warnings_title">Footer alerts</string>
+    <string name="qs_footer_warnings_summary">Display an alert at bottom of QS panel when network is monitored by external apps or VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">User account icon</string>
     <string name="qs_footer_users_icon_summary">Display multiuser accessibility icon when available</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Hide</string>
     <string name="stock_statusbar_in_hide">Stock statusbar height</string>
     <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
+    <string name="display_kill_notch_title">Kill notch</string>
+    <string name="display_kill_notch_summary">Kill notch completely for full screen apps</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Restrict apps from running the background</string>
     <string name="aggressive_battery_saver_title">Auto-enable on battery saver</string>
     <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Battery percentage</string>
-    <string name="battery_percentage_off">Disabled</string>
-    <string name="battery_percentage_next">Enabled</string>
-    <string name="battery_percentage_inside">Enabled (inside icon)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Battery estimate</string>
     <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>

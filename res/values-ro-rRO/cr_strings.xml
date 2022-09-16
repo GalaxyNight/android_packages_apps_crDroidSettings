@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -348,8 +348,8 @@
     <string name="double_tap_sleep_anywhere_title">Dublu tap pentru sleep</string>
     <string name="double_tap_sleep_anywhere_summary">Atingeţi de două ori oriunde pe ecranul de blocare pentru a pune aparatul în mod sleep</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Meniul power</string>
-    <string name="lockscreen_enable_power_menu_summary">Permite accesarea meniu putere pe ecran de blocare</string>
+    <string name="lockscreen_enable_power_menu_title">Meniu de alimentare</string>
+    <string name="lockscreen_enable_power_menu_summary">Permite accesarea meniului de alimentare pe ecranul de blocare securizat</string>
     <string name="lockscreen_secure_power_menu_title">Meniul de alimentare securizat</string>
     <string name="lockscreen_secure_power_menu_summary">Permiteți acțiunea din meniul de alimentare numai după autentificare</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Viteză lampă de lavă</string>
     <string name="pulse_solid_units_count">Numărul de linii solide</string>
     <string name="pulse_solid_units_opacity">Opacitate linii solide</string>
+    <string name="pulse_solid_units_rounded_title">Colțuri rotunjite</string>
+    <string name="pulse_solid_units_rounded_summary">Linii solide cu virf rotunjit</string>
     <string name="pulse_solid_dimen_category">Setările modului linii solide</string>
     <string name="fling_lavalamp_color_from">Culoare start Lava Lamp</string>
     <string name="fling_lavalamp_color_to">Culoare sfârșit Lava Lamp</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Stil baterie</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portret</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon peisaj</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Pictograma peisaj (dreapta)</string>
+    <string name="status_bar_battery_style_icon_landscape">Pictograma peisaj (stânga)</string>
     <string name="status_bar_battery_style_circle">Cerc</string>
     <string name="status_bar_battery_style_dotted_circle">Cerc punctat</string>
-    <string name="status_bar_battery_style_square">Pătrat</string>
-    <string name="status_bar_battery_style_solid">Solid</string>
+    <string name="status_bar_battery_style_filled_circle">Cerc completat</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Ascuns</string>
     <string name="status_bar_battery_style_tile_title">Suprascrie comutator baterie</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Procentaj baterie</string>
     <string name="status_bar_battery_percentage_default">Ascuns</string>
     <string name="status_bar_battery_percentage_text_inside">În interiorul pictogramei</string>
-    <string name="status_bar_battery_percentage_text_next">Lângă pictogramă</string>
+    <string name="status_bar_battery_percentage_text_next_right">Lângă pictograma (dreapta)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Lângă pictograma (stânga)</string>
     <string name="status_bar_battery_text_position_title">Poziție procent baterie</string>
     <string name="status_bar_battery_text_position_left">Stânga pictogramei</string>
     <string name="status_bar_battery_text_position_right">Dreapta pictogramei</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Afișaj ambiental</string>
     <string name="doze_display_summary">Configuraţi setările pentru afişarea ambientală</string>
     <string name="doze_sensor_title">Bazat pe senzori</string>
+    <string name="raise_to_wake_title">Trezire</string>
+    <string name="raise_to_wake_summary">Treziți dispozitivul în loc de notificare pulsantă</string>
     <string name="tilt_title">Inclinare</string>
     <string name="tilt_summary">Pulsează notificările la inclinare</string>
     <string name="pickup_title">Ridicare</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Distribuie crDroid</string>
     <string name="share_crdroid_summary">Anunta-i si pe altii despre crDroid</string>
+    <string name="share_message">Vezi despre ce este vorba în #crDroid Android @ https://crdroid.net/</string>
     <string name="share_chooser_title">Distribuie crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Sunete de încărcare</string>
     <string name="charging_sounds_settings_summary">Redă un sunet la conectarea sau deconectarea unei surse de alimentare</string>
-    <string name="charging_sounds_enabled_title">Permite</string>
+    <string name="charging_sounds_enabled_title">Sunet încărcare baterie</string>
     <string name="charging_sounds_enabled_summary">Redă un sunet la conectarea sau deconectarea unei surse de alimentare</string>
     <string name="power_notifications_vibrate_title">Vibrează</string>
-    <string name="charging_sounds_ringtone_title">Sunet de notificare</string>
     <string name="charging_sounds_ringtone_silent">Silențios</string>
+    <string name="wired_charging_sounds_title">Încărcare prin fir</string>
+    <string name="wireless_charging_sounds_title">Încărcare fără fir</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Blocare Wakelock</string>
     <string name="wakelock_blocker_summary">Blocare Wakelock-uri de sistem</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Mediu</string>
     <string name="rounded_high">Ridicat</string>
     <string name="rounded_extreme">Extrem</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Stil bară de semnal</string>
+    <string name="signal_style_summary">Setați stilul personalizat al pictogramei de semnal</string>
+    <string name="wifi_style_title">Stil bară WiFi</string>
+    <string name="wifi_style_summary">Setează stilul de pictogramă wifi personalizat</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Resetează statistici</string>
     <string name="battery_stats_message">Acest lucru va reseta statisticile de istorie ale bateriei. Doriţi să continuaţi?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Activare dublu apasare pentru sleep</string>
     <string name="full_gesture_mode_dt2s_summary">Apasa pe o zona goala din bara de navigatie, doar nu pe butonul de acasa, pentru a inchide ecranul.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">Alertă VPN</string>
-    <string name="qs_footer_warnings_summary">Afișează o alertă când rețeaua este monitorizată sau conectată prin VPN</string>
+    <string name="qs_footer_warnings_title">Alerte de subsol</string>
+    <string name="qs_footer_warnings_summary">Afișează o alertă în partea de jos a panoului setărilor rapide atunci când rețeaua este monitorizată de aplicații externe sau VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Iconiță cont utilizator</string>
     <string name="qs_footer_users_icon_summary">Afişare pictograma accesibilitate multiutilizator, atunci când este disponibil</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Ascuns</string>
     <string name="stock_statusbar_in_hide">Înălţime bară de stare stoc</string>
     <string name="stock_statusbar_in_hide_summary">Utilizaţi înălţime implicită pentru bara de stare</string>
+    <string name="display_kill_notch_title">Ascunde notch-ul</string>
+    <string name="display_kill_notch_summary">Acopera notch-ul complet pentru aplicatiile pe ecran complet</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicații ecran complet</string>
     <string name="display_cutout_force_fullscreen_summary">Forţaţi aplicațiile să ignore spațiul pentru notch</string>
@@ -2163,17 +2177,12 @@
     <string name="aggressive_standby_summary">Restricționați aplicațiile să ruleze în fundal</string>
     <string name="aggressive_battery_saver_title">Activare automată la economisirea bateriei</string>
     <string name="aggressive_battery_saver_summary">Activare automată baterie agresivă in mod economisirea bateriei</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Procentaj baterie</string>
-    <string name="battery_percentage_off">Dezactivat</string>
-    <string name="battery_percentage_next">Activ</string>
-    <string name="battery_percentage_inside">Activ (înăuntrul pictogramei)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Estimare baterie</string>
     <string name="battery_estimate_summary">Afișează durata de viață estimată a bateriei rămase când este disponibil</string>
     <!-- Refresh rate -->
     <string name="default_refresh_rate_title">Rata de reîmprospătare implicită</string>
-    <string name="peak_refresh_rate_title_custom">Rata maximă de împrospătare</string>
+    <string name="peak_refresh_rate_title_custom">Rata maximă de reîmprospătare</string>
     <string name="battery_saver_refresh_rate_title">Reduce rata de împrospătare</string>
     <string name="battery_saver_refresh_rate_summary">Folosește 60Hz ca rată maximă de reîmprospătare pentru a economisi energie în modul Economisire baterie</string>
     <!-- Ambient edge lighting -->

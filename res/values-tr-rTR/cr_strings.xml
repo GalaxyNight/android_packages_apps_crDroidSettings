@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -349,7 +349,7 @@
     <string name="double_tap_sleep_anywhere_summary">Cihazı uyutmak için kilit ekranının boş bir alanına iki kez hafifçe dokunun</string>
     <!-- Power menu on secure lockscreen -->
     <string name="lockscreen_enable_power_menu_title">Güç menüsü</string>
-    <string name="lockscreen_enable_power_menu_summary">Güvenli kilit ekranında güç menüsünü göster</string>
+    <string name="lockscreen_enable_power_menu_summary">Güvenli kilit ekranında güç menüsüne erişime izin ver</string>
     <string name="lockscreen_secure_power_menu_title">Güvenli güç menüsü</string>
     <string name="lockscreen_secure_power_menu_summary">Güç menüsü işlemine yalnızca kimlik doğrulamasından sonra izin ver</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Lav lambası hızı</string>
     <string name="pulse_solid_units_count">Düz çizgi sayısı</string>
     <string name="pulse_solid_units_opacity">Düz çizgi opaklığı</string>
+    <string name="pulse_solid_units_rounded_title">Yuvarlak köşeler</string>
+    <string name="pulse_solid_units_rounded_summary">Yuvarlak köşeli düz çizgiler</string>
     <string name="pulse_solid_dimen_category">Düz çizgi modu ayarları</string>
     <string name="fling_lavalamp_color_from">Lava lambası başlangıç rengi</string>
     <string name="fling_lavalamp_color_to">Lava lambası bitiş rengi</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Pil stili</string>
     <string name="status_bar_battery_style_icon_portrait">Dikey simge</string>
-    <string name="status_bar_battery_style_icon_landscape">Yatay simge</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Yatay simge (Sağ)</string>
+    <string name="status_bar_battery_style_icon_landscape">Yatay simge (Sol)</string>
     <string name="status_bar_battery_style_circle">Daire</string>
     <string name="status_bar_battery_style_dotted_circle">Noktalı daire</string>
-    <string name="status_bar_battery_style_square">Kare</string>
-    <string name="status_bar_battery_style_solid">Katı</string>
+    <string name="status_bar_battery_style_filled_circle">Dolgulu daire</string>
     <string name="status_bar_battery_style_text">Metin</string>
     <string name="status_bar_battery_style_hidden">Gizle</string>
     <string name="status_bar_battery_style_tile_title">Pil karesini geçersiz kıl</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
     <string name="status_bar_battery_percentage_default">Gizle</string>
     <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>
-    <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
+    <string name="status_bar_battery_percentage_text_next_right">Simgenin yanında (sağ)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Simgenin yanında (sol)</string>
     <string name="status_bar_battery_text_position_title">Pil yüzdesi konumu</string>
     <string name="status_bar_battery_text_position_left">Simgenin solunda</string>
     <string name="status_bar_battery_text_position_right">Simgenin sağında</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Ortam ekranı</string>
     <string name="doze_display_summary">Ortam ekranı seçenekleri</string>
     <string name="doze_sensor_title">Sensör</string>
+    <string name="raise_to_wake_title">Uyandır</string>
+    <string name="raise_to_wake_summary">Titreşimli bildirim yerine cihazı uyandırın</string>
     <string name="tilt_title">Eğim</string>
     <string name="tilt_summary">Eğim sensöründe bildirimleri göster</string>
     <string name="pickup_title">Kaldır</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">crDroid\'i paylaş</string>
     <string name="share_crdroid_summary">Başkalarına crDroid hakkında bilgi verin</string>
+    <string name="share_message">#crDroid Android\'in neyle ilgili olduğunu @ https://crdroid.net/ adresinden kontrol edin</string>
     <string name="share_chooser_title">crDroid\'i paylaş</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Şarj sesleri</string>
     <string name="charging_sounds_settings_summary">Şarj aleti takıldığında veya çıkarıldığında sesi özelleştirin</string>
-    <string name="charging_sounds_enabled_title">Etkinleştir</string>
+    <string name="charging_sounds_enabled_title">Pil şarj sesi</string>
     <string name="charging_sounds_enabled_summary">Şarj aleti takıldığında veya çıkartıldığında ses çıkart</string>
     <string name="power_notifications_vibrate_title">Titreşim</string>
-    <string name="charging_sounds_ringtone_title">Bildirim sesi</string>
     <string name="charging_sounds_ringtone_silent">Sessiz</string>
+    <string name="wired_charging_sounds_title">Kablolu şarj</string>
+    <string name="wireless_charging_sounds_title">Kablosuz şarj</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Uyandırma kilidi engelleyici</string>
     <string name="wakelock_blocker_summary">Sistem uyandırma kilitlerini engelle</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Orta</string>
     <string name="rounded_high">Yüksek</string>
     <string name="rounded_extreme">Aşırı</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Sinyal çubuğu stili</string>
+    <string name="signal_style_summary">Özel sinyal simgesi stili ayarlayın</string>
+    <string name="wifi_style_title">WiFi çubuğu stili</string>
+    <string name="wifi_style_summary">Özel wifi simge stili ayarlayın</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">İstatistikleri sıfırla</string>
     <string name="battery_stats_message">Bu pil geçmişi istatistiklerini sıfırlayacaktır. Devam etmek istiyor musunuz?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Çift dokunuşla uyutma</string>
     <string name="full_gesture_mode_dt2s_summary">Ekranı kapatmak için gezinme çubuğun boş bir alanına iki kez hafifçe dokunun ancak ana ekran tuşuna dokunmayın.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">VPN uyarısı</string>
-    <string name="qs_footer_warnings_summary">Ağ izlenirken veya VPN ile bağlanıldığında alt panel bilgisinde bir uyarı görüntüle</string>
+    <string name="qs_footer_warnings_title">Altbilgi uyarıları</string>
+    <string name="qs_footer_warnings_summary">Ağ, harici uygulamalar veya VPN tarafından izlendiğinde Hızlı ayarlar panelinin altında uyarı göster</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Kullanıcı hesabı simgesi</string>
     <string name="qs_footer_users_icon_summary">Mevcut olduğunda çoklu kullanıcı erişilebilirlik simgesini görüntüle</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Gizle</string>
     <string name="stock_statusbar_in_hide">Varsayılan durum çubuğu yüksekliği</string>
     <string name="stock_statusbar_in_hide_summary">Gizle de varsayılan durum çubuğu yüksekliğini kullan</string>
+    <string name="display_kill_notch_title">Çentiği kaldır</string>
+    <string name="display_kill_notch_summary">Tam ekran uygulamalar için çentiği tamamen ortadan kaldırın</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Tam ekran uygulamaları</string>
     <string name="display_cutout_force_fullscreen_summary">Uygulamaları çentik alanını yoksaymaya zorla</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Uygulamaların arkaplan da çalışmasını engeller</string>
     <string name="aggressive_battery_saver_title">Pil tasarrufu için otomatik etkinleştir</string>
     <string name="aggressive_battery_saver_summary">Pil tasarrufunu kullanırken agresif pili otomatik olarak etkinleştirir</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Pil yüzdesi</string>
-    <string name="battery_percentage_off">Devre dışı</string>
-    <string name="battery_percentage_next">Etkin</string>
-    <string name="battery_percentage_inside">Etkin (simge içinde)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Tahmini pil süresi</string>
     <string name="battery_estimate_summary">Mümkün olduğunda tahmini kalan pil ömrünü görüntüleyin</string>

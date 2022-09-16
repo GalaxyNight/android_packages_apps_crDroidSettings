@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Rychlost Lávové lampy</string>
     <string name="pulse_solid_units_count">Počet plných čar</string>
     <string name="pulse_solid_units_opacity">Neprůhlednost plných čar</string>
+    <string name="pulse_solid_units_rounded_title">Zaoblené rohy</string>
+    <string name="pulse_solid_units_rounded_summary">Plné čáry se zakulacenou špičkou</string>
     <string name="pulse_solid_dimen_category">Nastavení režimu Plné čáry</string>
     <string name="fling_lavalamp_color_from">Počáteční barva Lávové lampy</string>
     <string name="fling_lavalamp_color_to">Konečná barva Lávové lampy</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Styl baterie</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikona na šířku</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Ikona na šířku (vpravo)</string>
+    <string name="status_bar_battery_style_icon_landscape">Ikona na šířku (vlevo)</string>
     <string name="status_bar_battery_style_circle">Kroužek</string>
     <string name="status_bar_battery_style_dotted_circle">Přerušovaný kroužek</string>
-    <string name="status_bar_battery_style_square">Čtvereček</string>
-    <string name="status_bar_battery_style_solid">Plný</string>
+    <string name="status_bar_battery_style_filled_circle">Vyplněný kruh</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Skrytý</string>
     <string name="status_bar_battery_style_tile_title">Vlastní styl dlaždice baterie</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Procenta baterie</string>
     <string name="status_bar_battery_percentage_default">Skryté</string>
     <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
-    <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
+    <string name="status_bar_battery_percentage_text_next_right">Vedle ikony (vpravo)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Vedle ikony (vlevo)</string>
     <string name="status_bar_battery_text_position_title">Umístění procenta nabití baterie</string>
     <string name="status_bar_battery_text_position_left">Nalevo od ikony</string>
     <string name="status_bar_battery_text_position_right">Napravo od ikony</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Ambientní displej</string>
     <string name="doze_display_summary">Konfigurovat nastavení Ambientního displeje</string>
     <string name="doze_sensor_title">Na základě senzorů</string>
+    <string name="raise_to_wake_title">Probudit</string>
+    <string name="raise_to_wake_summary">Probudit zařízení namísto přijetí oznámení</string>
     <string name="tilt_title">Naklonění</string>
     <string name="tilt_summary">Zobrazit oznámení při naklonění zařízení</string>
     <string name="pickup_title">Zvednutí</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Sdílet crDroid</string>
     <string name="share_crdroid_summary">Dejte vědět ostatním o\u00a0crDroidu</string>
+    <string name="share_message">Podívejte se o\u00a0čem je #crDroid Android na: https://crdroid.net/</string>
     <string name="share_chooser_title">Sdílet crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Zvuky při nabíjení</string>
     <string name="charging_sounds_settings_summary">Přizpůsobit zvuk přehrávaný při připojení nebo odpojení zdroje napájení</string>
-    <string name="charging_sounds_enabled_title">Povolit</string>
+    <string name="charging_sounds_enabled_title">Zvuk nabíjení baterie</string>
     <string name="charging_sounds_enabled_summary">Přehrát zvuk při připojení nebo odpojení zdroje napájení</string>
     <string name="power_notifications_vibrate_title">Vibrace</string>
-    <string name="charging_sounds_ringtone_title">Zvuk upozornění</string>
     <string name="charging_sounds_ringtone_silent">Tichý</string>
+    <string name="wired_charging_sounds_title">Nabíjení kabelem</string>
+    <string name="wireless_charging_sounds_title">Bezdrátové nabíjení</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Blokování wakelocků</string>
     <string name="wakelock_blocker_summary">Umožnit blokování systémových wakelocků</string>
@@ -1841,7 +1848,7 @@
     <string name="edge_gestures_description">Přejetím prstem zespodu nahoru se aktivuje gesto „Domů.“ Pokud prst přidržíte, otevřou se nedávné aplikace. Přejetím prstu nahoru z\u00a0levé nebo pravé spodní strany aktivujete gesto „Zpět.“</string>
     <string name="edge_gestures_feedback_duration_title">Doba trvání hmatové odezvy</string>
     <string name="edge_gestures_long_press_delay_title">Prodleva před spuštěním akce dlouhého stisku</string>
-    <string name="edge_gestures_back_category_title">Gesto Zpět</string>
+    <string name="edge_gestures_back_category_title">Gesto „Zpět“</string>
     <string name="edge_gestures_back_edges_title">Aktivovat gesto „Zpět“</string>
     <string name="edge_gestures_landscape_back_edges_title">V režimu na šířku aktivovat gesto „Zpět“</string>
     <string name="edge_gestures_back_screen_percent_title">Gesto „Zpět“ musí být nastaveno pod tímto procentuálním rozměrem obrazovky</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Střední</string>
     <string name="rounded_high">Veliký</string>
     <string name="rounded_extreme">Extrémní</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Styl panelu se signálem</string>
+    <string name="signal_style_summary">Nastavit vlastní styl ikony signálu</string>
+    <string name="wifi_style_title">Styl panelu s\u00a0Wi‑Fi</string>
+    <string name="wifi_style_summary">Nastavit vlastní styl ikony Wi‑Fi</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Obnovit statistiky</string>
     <string name="battery_stats_message">Touto akcí obnovíte statistiky historie baterie. Přejete si pokračovat?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Uspat zařízení dvojím poklepáním</string>
     <string name="full_gesture_mode_dt2s_summary">Poklepáním na prázdný prostor navigačního panelu, mimo tlačítka „Domů,“ dojde k\u00a0vypnutí obrazovky.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">VPN výstraha</string>
-    <string name="qs_footer_warnings_summary">Zobrazit výstrahu, když je síť sledována nebo připojena pomocí VPN</string>
+    <string name="qs_footer_warnings_title">Upozornění v\u00a0zápatí</string>
+    <string name="qs_footer_warnings_summary">Zobrazit upozornění ve spodní části panelu rychlého nastavení, když je síť monitorována externími aplikacemi nebo VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Ikona uživatelského účtu</string>
     <string name="qs_footer_users_icon_summary">Zobrazit přístupovou ikonu pro více uživatelů, je‑li k\u00a0dispozici více než jeden účet</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Skrytý</string>
     <string name="stock_statusbar_in_hide">Výchozí výška stavového řádku</string>
     <string name="stock_statusbar_in_hide_summary">Použít výchozí výšku stavového řádku při použití stylu Skrytý</string>
+    <string name="display_kill_notch_title">Odstranit výřez</string>
+    <string name="display_kill_notch_summary">Zcela odstranit výřez pro aplikace přes celou obrazovku</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikace přes celou obrazovku</string>
     <string name="display_cutout_force_fullscreen_summary">Vynutit, aby aplikace ignorovaly výřez v\u00a0displeji</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Omezí aplikacím činnost na pozadí</string>
     <string name="aggressive_battery_saver_title">Automaticky zapnout při spořiči baterie</string>
     <string name="aggressive_battery_saver_summary">Při použití spořiče baterie automaticky aktivovat funkci „Agresivní baterie“</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Procenta baterie</string>
-    <string name="battery_percentage_off">Zakázáno</string>
-    <string name="battery_percentage_next">Povoleno</string>
-    <string name="battery_percentage_inside">Povoleno (uvnitř ikony)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Odhad výdrže baterie</string>
     <string name="battery_estimate_summary">Zobrazit odhad zbývající výdrže baterie, je‑li k\u00a0dispozici</string>

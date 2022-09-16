@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -348,8 +348,8 @@
     <string name="double_tap_sleep_anywhere_title">Ketuk untuk tidur</string>
     <string name="double_tap_sleep_anywhere_summary">Ketuk ganda dimanapun pada layar yang terkunci untuk membuat alat tertidur</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Menu daya</string>
-    <string name="lockscreen_enable_power_menu_summary">Izinkan akses menu daya pada layar kunci</string>
+    <string name="lockscreen_enable_power_menu_title">Menu daya pada layar kunci</string>
+    <string name="lockscreen_enable_power_menu_summary">Izinkan mengakses menu daya pada layar kunci aman</string>
     <string name="lockscreen_secure_power_menu_title">Menu daya aman</string>
     <string name="lockscreen_secure_power_menu_summary">Izinkan tindakan menu daya hanya setelah otentikasi</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Kecepatan Lampu lava</string>
     <string name="pulse_solid_units_count">Jumlah garis-garis solid</string>
     <string name="pulse_solid_units_opacity">Keburaman garis-garis solid</string>
+    <string name="pulse_solid_units_rounded_title">Sudut melengkung</string>
+    <string name="pulse_solid_units_rounded_summary">Garis padat dengan ujung melengkung</string>
     <string name="pulse_solid_dimen_category">Pengaturan mode garis padat</string>
     <string name="fling_lavalamp_color_from">Warna awal lampu lava</string>
     <string name="fling_lavalamp_color_to">Warna akhir lampu lava</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Corak mode Baterai</string>
     <string name="status_bar_battery_style_icon_portrait">Ikon potret</string>
-    <string name="status_bar_battery_style_icon_landscape">Lanskap ikon</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Ikon mendatar (Kanan)</string>
+    <string name="status_bar_battery_style_icon_landscape">Ikon mendatar (Kiri)</string>
     <string name="status_bar_battery_style_circle">Lingkaran</string>
     <string name="status_bar_battery_style_dotted_circle">Titik melingkar</string>
-    <string name="status_bar_battery_style_square">Kotak</string>
-    <string name="status_bar_battery_style_solid">Padat</string>
+    <string name="status_bar_battery_style_filled_circle">Lingkaran berisi</string>
     <string name="status_bar_battery_style_text">Teks</string>
     <string name="status_bar_battery_style_hidden">Tersembunyi</string>
     <string name="status_bar_battery_style_tile_title">Timpa ubin baterai</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Persentase baterai</string>
     <string name="status_bar_battery_percentage_default">Tersembunyi</string>
     <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
-    <string name="status_bar_battery_percentage_text_next">Di samping ikon</string>
+    <string name="status_bar_battery_percentage_text_next_right">Di sebelah ikon (kanan)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Di sebelah ikon (kiri)</string>
     <string name="status_bar_battery_text_position_title">Posisi persen baterai</string>
     <string name="status_bar_battery_text_position_left">Di sebelah kiri ikon</string>
     <string name="status_bar_battery_text_position_right">Kanan ikon</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Tampilan ambien</string>
     <string name="doze_display_summary">Mengkonfigurasi pengaturan untuk tampilan ambien</string>
     <string name="doze_sensor_title">Berdasarkan sensor</string>
+    <string name="raise_to_wake_title">Bangunkan perangkat</string>
+    <string name="raise_to_wake_summary">Bangunkan perangkat alih-alih menampilkan notifikasi</string>
     <string name="tilt_title">Miring</string>
     <string name="tilt_summary">Kedipkan pemberitahuan saat diambil</string>
     <string name="pickup_title">Ambil</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Bagikan crDroid</string>
     <string name="share_crdroid_summary">Biarkan orang lain tahu tentang crDroid</string>
+    <string name="share_message">Lihat apa itu #crDroid semua tentang Android @ https://crdroid.net/</string>
     <string name="share_chooser_title">Bagikan crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Pengisian suara</string>
     <string name="charging_sounds_settings_summary">Sesuaikan pemutaran suara ketika terhubung atau terlepas dari sebuah sumber daya</string>
-    <string name="charging_sounds_enabled_title">Mengaktifkan</string>
+    <string name="charging_sounds_enabled_title">Suara saat mengisi daya baterai</string>
     <string name="charging_sounds_enabled_summary">Putar sebuah suara ketika terhubung atau terlepas sari sumber daya</string>
     <string name="power_notifications_vibrate_title">Getar</string>
-    <string name="charging_sounds_ringtone_title">Notifikasi suara</string>
     <string name="charging_sounds_ringtone_silent">Diam</string>
+    <string name="wired_charging_sounds_title">Pengisian kabel</string>
+    <string name="wireless_charging_sounds_title">Pengisian nirkabel</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Pemblokir Wakelock</string>
     <string name="wakelock_blocker_summary">Blokir sistem wakelocks</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Sedang</string>
     <string name="rounded_high">Tinggi</string>
     <string name="rounded_extreme">Ekstrim</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Gaya bar sinyal</string>
+    <string name="signal_style_summary">Setel gaya ikon sinyal kustom</string>
+    <string name="wifi_style_title">Gaya bar WiFi</string>
+    <string name="wifi_style_summary">Setel gaya ikon wifi kustom</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Atur ulang statistik</string>
     <string name="battery_stats_message">Ini akan mengatur ulang statistik riwayat baterai. Apakah anda ingin melanjutkan?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Aktifkan ketuk dua kali untuk tidur</string>
     <string name="full_gesture_mode_dt2s_summary">Ketuk pada bagian kosong dari bar navigasi tetapi bukan tombol beranda untuk mengganti layar.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">VPN waspada</string>
-    <string name="qs_footer_warnings_summary">Menampilkan peringatan ketika jaringan dimonitor atau terhubung melalui VPN</string>
+    <string name="qs_footer_warnings_title">Peringatan footer</string>
+    <string name="qs_footer_warnings_summary">Tampilkan peringatan di bagian bawah panel QS saat jaringan dipantau oleh aplikasi eksternal atau VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Akun pengguna</string>
     <string name="qs_footer_users_icon_summary">Menampilkan ikon aksesibilitas multiuser bila tersedia</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Menyembunyikan</string>
     <string name="stock_statusbar_in_hide">Tinggi bar status stok</string>
     <string name="stock_statusbar_in_hide_summary">Gunakan ketinggian bilah status default di Sembunyikan</string>
+    <string name="display_kill_notch_title">Bunuh takik</string>
+    <string name="display_kill_notch_summary">Bunuh takik sepenuhnya untuk aplikasi layar penuh</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikasi layar penuh</string>
     <string name="display_cutout_force_fullscreen_summary">Paksa aplikasi untuk mengabaikan ruang takik</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Batasi aplikasi dari menjalankan latar belakang</string>
     <string name="aggressive_battery_saver_title">Hidupkan-otomatis pada penghemat baterai</string>
     <string name="aggressive_battery_saver_summary">Nyalakan baterai agresif otomatis saat menggunakan penghemat baterai</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Persentase baterai</string>
-    <string name="battery_percentage_off">Dinonaktifkan</string>
-    <string name="battery_percentage_next">Diaktifkan</string>
-    <string name="battery_percentage_inside">Hidupkan (didalam ikon)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Perkiraan Baterai</string>
     <string name="battery_estimate_summary">Tampilkan estimasi daya baterai apabila tersedia</string>

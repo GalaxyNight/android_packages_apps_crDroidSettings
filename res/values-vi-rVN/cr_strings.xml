@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Tốc độ đèn dung nham</string>
     <string name="pulse_solid_units_count">Số đường liền nét</string>
     <string name="pulse_solid_units_opacity">Độ đậm đường liền nét</string>
+    <string name="pulse_solid_units_rounded_title">Bo tròn góc</string>
+    <string name="pulse_solid_units_rounded_summary">Đường nét chắc chắn với đầu bo tròn</string>
     <string name="pulse_solid_dimen_category">Cài đặt chế độ đường liền nét</string>
     <string name="fling_lavalamp_color_from">Màu bắt đầu Đèn dung nham</string>
     <string name="fling_lavalamp_color_to">Màu kết thúc Đèn dung nham</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Kiểu thanh pin</string>
     <string name="status_bar_battery_style_icon_portrait">Biểu tượng dọc</string>
-    <string name="status_bar_battery_style_icon_landscape">Biểu tượng nằm ngang</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Biểu tượng nằm ngang (Phải)</string>
+    <string name="status_bar_battery_style_icon_landscape">Biểu tượng nằm ngang (Trái)</string>
     <string name="status_bar_battery_style_circle">Hình tròn</string>
     <string name="status_bar_battery_style_dotted_circle">Vòng chấm</string>
-    <string name="status_bar_battery_style_square">Hình vuông</string>
-    <string name="status_bar_battery_style_solid">Khối</string>
+    <string name="status_bar_battery_style_filled_circle">Vòng trong lấp đầy</string>
     <string name="status_bar_battery_style_text">Văn bản</string>
     <string name="status_bar_battery_style_hidden">Ẩn</string>
     <string name="status_bar_battery_style_tile_title">Ghi đè lên biểu tượng pin</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Phần trăm pin</string>
     <string name="status_bar_battery_percentage_default">Ẩn</string>
     <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng pin</string>
-    <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng pin</string>
+    <string name="status_bar_battery_percentage_text_next_right">Bên cạnh biểu tượng (bên phải)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Bên cạnh biểu tượng (bên trái)</string>
     <string name="status_bar_battery_text_position_title">Ví trí hiển thị dung lượng pin</string>
     <string name="status_bar_battery_text_position_left">Bên trái biểu tượng pin</string>
     <string name="status_bar_battery_text_position_right">Bên phải biểu tượng pin</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Hiển thị tương tác</string>
     <string name="doze_display_summary">Cấu hình các cài đặt cho Hiển thị tương tác</string>
     <string name="doze_sensor_title">Dựa vào cảm biến</string>
+    <string name="raise_to_wake_title">Đánh thức thiết bị</string>
+    <string name="raise_to_wake_summary">Đánh thức thiết bị thay vì thông báo rung</string>
     <string name="tilt_title">Độ nghiêng</string>
     <string name="tilt_summary">Kích hoạt thông báo khi nhấc lên</string>
     <string name="pickup_title">Nhấc lên</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Chia sẻ crDroid</string>
     <string name="share_crdroid_summary">Cho những người khác biết về Crdroid</string>
+    <string name="share_message">Tìm hiểu thêm về #crDroid Android @ https://crdroid.net/</string>
     <string name="share_chooser_title">Chia sẻ crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Âm báo đang sạc</string>
     <string name="charging_sounds_settings_summary">Phát một âm báo khi cắm sạc hoặc rút sạc</string>
-    <string name="charging_sounds_enabled_title">Bật</string>
+    <string name="charging_sounds_enabled_title">Âm thanh sạc pin</string>
     <string name="charging_sounds_enabled_summary">Phát một âm báo khi cắm sạc hoặc rút sạc</string>
     <string name="power_notifications_vibrate_title">Rung</string>
-    <string name="charging_sounds_ringtone_title">Âm thanh thông báo</string>
     <string name="charging_sounds_ringtone_silent">Im lặng</string>
+    <string name="wired_charging_sounds_title">Sạc có dây</string>
+    <string name="wireless_charging_sounds_title">Sạc không dây</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Trình chặn wakelock</string>
     <string name="wakelock_blocker_summary">Chặn các wakelock hệ thống</string>
@@ -1722,7 +1729,7 @@
     <string name="font_picker_progress">Áp dụng phông chữ mới\u2026</string>
     <!-- Ambient display battery percentage -->
     <string name="ambient_battery_percent_title">Thông tin pin</string>
-    <string name="ambient_battery_percent_summary">Hiển thị thông tin pin hiện tại trong khi dozing</string>
+    <string name="ambient_battery_percent_summary">Hiển thị thông tin pin hiện tại khi ngủ sâu</string>
     <!-- Wake And Unlock -->
     <string name="fp_wake_and_unlock_title">Mở khoá vân tay</string>
     <string name="fp_wake_and_unlock_summary">Cho phép thiết bị mở khóa bằng vân tay khi màn hình đang tắt hoặc dozing</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Vừa</string>
     <string name="rounded_high">To</string>
     <string name="rounded_extreme">To hơn</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Kiểu thanh tín hiệu</string>
+    <string name="signal_style_summary">Tùy chọn kiểu biểu tượng tín hiệu</string>
+    <string name="wifi_style_title">Kiểu thanh Wifi</string>
+    <string name="wifi_style_summary">Tùy chọn kiểu biểu tượng WiFi</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Đặt lại thống kê</string>
     <string name="battery_stats_message">Điều này sẽ thiết lập lại lịch sử thống kê Pin. Bạn có muốn tiếp tục không?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Bật nhấn đúp để tắt màn hình</string>
     <string name="full_gesture_mode_dt2s_summary">Chạm vào khoảng trống trên thanh điều hướng nhưng không phải nút home để tắt màn hình.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">Cảnh báo VPN</string>
-    <string name="qs_footer_warnings_summary">Hiển thị cảnh báo khi mạng lưới giám sát hoặc kết nối thông qua VPN</string>
+    <string name="qs_footer_warnings_title">Cảnh báo phía dưới</string>
+    <string name="qs_footer_warnings_summary">Hiển thị cảnh báo ở cuối bảng điều khiển cài đặt nhanh khi mạng được theo dõi bởi các ứng dụng ngoài hoặc VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Biểu tượng tài khoản người dùng</string>
     <string name="qs_footer_users_icon_summary">Hiển thị icon nhiều người dùng khi có sẵn</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Ẩn</string>
     <string name="stock_statusbar_in_hide">Chiều cao thanh trạng thái gốc</string>
     <string name="stock_statusbar_in_hide_summary">Sử dụng chiều cao thanh trạng thái mặc định trong Ẩn</string>
+    <string name="display_kill_notch_title">Ẩn tai thỏ</string>
+    <string name="display_kill_notch_summary">Ẩn tai thỏ hoàn toàn với các ứng dụng toàn màn hình</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Ứng dụng toàn màn hình</string>
     <string name="display_cutout_force_fullscreen_summary">Buộc các ứng dụng bỏ qua không gian tai thỏ</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Hạn chế ứng dụng chạy nền</string>
     <string name="aggressive_battery_saver_title">Tự động bật khi bật trình tiết kiệm pin</string>
     <string name="aggressive_battery_saver_summary">Tự động kích hoạt tiết kiệm pin tích cực khi dùng chế độ tiết kiệm pin</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Tỷ lệ phần trăm pin</string>
-    <string name="battery_percentage_off">Đã tắt</string>
-    <string name="battery_percentage_next">Đã bật</string>
-    <string name="battery_percentage_inside">Đã bật (bên trong biểu tượng)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Ước tính thời lượng pin còn lại</string>
     <string name="battery_estimate_summary">Hiển thị thời lượng pin còn lại khi khả dụng</string>

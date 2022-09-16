@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2021 crDroid Android Project
+ * Copyright (C) 2017-2022 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,6 +21,9 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.PowerManager;
+import android.os.PowerManager.WakeLock;
+import android.os.SystemClock;
 import android.os.UserHandle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
@@ -36,6 +39,8 @@ public class ProximitySensor implements SensorEventListener {
     private static final boolean DEBUG = false;
     private static final String TAG = "ProximitySensor";
 
+    private static final int WAKELOCK_TIMEOUT_MS = 300;
+
     // Maximum time for the hand to cover the sensor: 1s
     private static final int HANDWAVE_MAX_DELTA_NS = 1000 * 1000 * 1000;
 
@@ -46,6 +51,8 @@ public class ProximitySensor implements SensorEventListener {
     private Sensor mSensor;
     private Context mContext;
     private ExecutorService mExecutorService;
+    private PowerManager mPowerManager;
+    private WakeLock mWakeLock;
 
     private boolean mSawNear = false;
     private long mInPocketTime = 0;
@@ -57,6 +64,8 @@ public class ProximitySensor implements SensorEventListener {
         mSensorManager = mContext.getSystemService(SensorManager.class);
         final boolean wakeup = context.getResources().getBoolean(com.android.internal.R.bool.config_deviceHaveWakeUpProximity);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY, wakeup);
+        mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
+        mWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, TAG);
         mExecutorService = Executors.newSingleThreadExecutor();
         mVibrator = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
         if (mVibrator == null || !mVibrator.hasVibrator()) {
@@ -70,11 +79,18 @@ public class ProximitySensor implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent event) {
+        boolean isRaiseToWake = Utils.isRaiseToWakeEnabled(mContext);
         boolean isNear = event.values[0] < mSensor.getMaximumRange();
         if (mSawNear && !isNear) {
             if (shouldPulse(event.timestamp)) {
-                Utils.launchDozePulse(mContext);
-                doHapticFeedback();
+                if (isRaiseToWake) {
+                    mWakeLock.acquire(WAKELOCK_TIMEOUT_MS);
+                    mPowerManager.wakeUp(SystemClock.uptimeMillis(),
+                        PowerManager.WAKE_REASON_GESTURE, TAG);
+                } else {
+                    Utils.launchDozePulse(mContext);
+                    doHapticFeedback();
+                }
             }
         } else {
             mInPocketTime = event.timestamp;
@@ -84,15 +100,15 @@ public class ProximitySensor implements SensorEventListener {
 
     private boolean shouldPulse(long timestamp) {
         long delta = timestamp - mInPocketTime;
+        boolean shouldPulse = false;
 
-        if (Utils.handwaveGestureEnabled(mContext) && Utils.pocketGestureEnabled(mContext)) {
-            return true;
-        } else if (Utils.handwaveGestureEnabled(mContext)) {
-            return delta < HANDWAVE_MAX_DELTA_NS;
-        } else if (Utils.pocketGestureEnabled(mContext)) {
-            return delta >= POCKET_MIN_DELTA_NS;
-        }
-        return false;
+        if (delta < HANDWAVE_MAX_DELTA_NS)
+            shouldPulse = Utils.handwaveGestureEnabled(mContext);
+
+        if (!shouldPulse && delta >= POCKET_MIN_DELTA_NS)
+            shouldPulse = Utils.pocketGestureEnabled(mContext);
+
+        return shouldPulse;
     }
 
     @Override

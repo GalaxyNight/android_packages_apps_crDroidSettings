@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -349,7 +349,7 @@
     <string name="double_tap_sleep_anywhere_summary">Doppio tocco sulla schermata di blocco per sospendere il dispositivo</string>
     <!-- Power menu on secure lockscreen -->
     <string name="lockscreen_enable_power_menu_title">Menù di alimentazione</string>
-    <string name="lockscreen_enable_power_menu_summary">Consente l\'accesso al menù di accensione sulla schermata di blocco</string>
+    <string name="lockscreen_enable_power_menu_summary">Consente l\'accesso al menù di alimentazione sulla schermata di blocco</string>
     <string name="lockscreen_secure_power_menu_title">Menù alimentazione sicuro</string>
     <string name="lockscreen_secure_power_menu_summary">Consenti le azioni del menù di spegnimento solo dopo l\'autenticazione</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Velocità lampada di lava</string>
     <string name="pulse_solid_units_count">Linee continue solide</string>
     <string name="pulse_solid_units_opacity">Linee continue opache</string>
+    <string name="pulse_solid_units_rounded_title">Angoli arrotondati</string>
+    <string name="pulse_solid_units_rounded_summary">Linee continue con punta arrotondata</string>
     <string name="pulse_solid_dimen_category">Impostazioni della modalità linee continue</string>
     <string name="fling_lavalamp_color_from">Colore avvio lampada di lava</string>
     <string name="fling_lavalamp_color_to">Colore finale lampada di lava</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Stile batteria</string>
     <string name="status_bar_battery_style_icon_portrait">Icona verticale</string>
-    <string name="status_bar_battery_style_icon_landscape">Icona orizzontale</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icona orizzontale (a destra)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icona orizzontale (a sinistra)</string>
     <string name="status_bar_battery_style_circle">Cerchio</string>
     <string name="status_bar_battery_style_dotted_circle">Cerchio tratteggiato</string>
-    <string name="status_bar_battery_style_square">Quadrato</string>
-    <string name="status_bar_battery_style_solid">Grassetto</string>
+    <string name="status_bar_battery_style_filled_circle">Cerchio pieno</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_style_hidden">Nascosta</string>
     <string name="status_bar_battery_style_tile_title">Stile tile batteria personalizzato</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Percentuale della batteria</string>
     <string name="status_bar_battery_percentage_default">Nascosta</string>
     <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
-    <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
+    <string name="status_bar_battery_percentage_text_next_right">Accanto all\'icona (a destra)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Accanto all\'icona (a sinistra)</string>
     <string name="status_bar_battery_text_position_title">Posizione percentuale batteria</string>
     <string name="status_bar_battery_text_position_left">A Sinistra dell\'icona</string>
     <string name="status_bar_battery_text_position_right">A destra dell\'icona</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Ambient Display</string>
     <string name="doze_display_summary">Configura le impostazioni per l\'Ambient Display</string>
     <string name="doze_sensor_title">Basato sul sensore</string>
+    <string name="raise_to_wake_title">Risveglia dispositivo</string>
+    <string name="raise_to_wake_summary">Risveglia il dispositivo invece di visualizzare le notifiche</string>
     <string name="tilt_title">Inclinazione</string>
     <string name="tilt_summary">Notifiche lampeggianti sull\'inclinazione</string>
     <string name="pickup_title">Sollevamento</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Condividi crDroid</string>
     <string name="share_crdroid_summary">Fai conoscere agli altri su crDroid</string>
+    <string name="share_message">Scopri di cosa si tratta sulle informazioni di crDroid @ https://crdroid.net/</string>
     <string name="share_chooser_title">Condividi crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Suono di ricarica</string>
     <string name="charging_sounds_settings_summary">Personalizza il suono riprodotto quando si collega o scollega da una fonte di alimentazione</string>
-    <string name="charging_sounds_enabled_title">Abilita</string>
+    <string name="charging_sounds_enabled_title">Suono di carica della batteria</string>
     <string name="charging_sounds_enabled_summary">Riproduci un suono quando si collega o scollega da una fonte di alimentazione</string>
     <string name="power_notifications_vibrate_title">Vibrazione</string>
-    <string name="charging_sounds_ringtone_title">Suono di notifica</string>
     <string name="charging_sounds_ringtone_silent">Silenzioso</string>
+    <string name="wired_charging_sounds_title">Ricarica via cavo</string>
+    <string name="wireless_charging_sounds_title">Ricarica wireless</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Blocco wakelock</string>
     <string name="wakelock_blocker_summary">Blocca i wakelock di sistema</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Medio</string>
     <string name="rounded_high">Alto</string>
     <string name="rounded_extreme">Estremo</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Stile barra segnale</string>
+    <string name="signal_style_summary">Imposta lo stile personalizzato dell\'icona del segnale</string>
+    <string name="wifi_style_title">Stile barra WiFi</string>
+    <string name="wifi_style_summary">Imposta lo stile personalizzato dell\'icona del wifi</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reimposta statistiche</string>
     <string name="battery_stats_message">Stai per reimpostare le statistiche della batteria. Vuoi proseguire?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Attiva il doppio tocco per disattivare lo schermo</string>
     <string name="full_gesture_mode_dt2s_summary">Tocca uno spazio vuoto della barra di navigazione, ma non il tasto home per spegnere lo schermo.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">Avviso VPN</string>
-    <string name="qs_footer_warnings_summary">Visualizza un avviso quando la rete è monitorata o collegata tramite VPN</string>
+    <string name="qs_footer_warnings_title">Avvisi su piè di pagina</string>
+    <string name="qs_footer_warnings_summary">Visualizza un avviso nella parte inferiore del pannello impostazioni rapide quando la rete è monitorata da applicazioni esterne o VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Icona dell\'account utente</string>
     <string name="qs_footer_users_icon_summary">Mostra l\'icona di accessibilità multiutente quando disponibile</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Nascosto</string>
     <string name="stock_statusbar_in_hide">Altezza della barra di stato predefinita</string>
     <string name="stock_statusbar_in_hide_summary">Usa l\'altezza della barra di stato predefinita in \"nascondi\"</string>
+    <string name="display_kill_notch_title">Nascondi notch</string>
+    <string name="display_kill_notch_summary">Nascondi completamente il notch per le applicazioni a schermo intero</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">App a schermo intero</string>
     <string name="display_cutout_force_fullscreen_summary">Forza le applicazioni ad ignorare lo spazio del notch</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Limita l\'utilizzo delle applicazioni in esecuzione in background</string>
     <string name="aggressive_battery_saver_title">Attiva automaticamente con risparmio energetico</string>
     <string name="aggressive_battery_saver_summary">Abilita automaticamente la batteria aggressiva quando il risparmio energetico viene attivato</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Percentuale batteria</string>
-    <string name="battery_percentage_off">Disattivato</string>
-    <string name="battery_percentage_next">Attivato</string>
-    <string name="battery_percentage_inside">Attivato (dentro l\'icona)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Stima della batteria</string>
     <string name="battery_estimate_summary">Mostra la percentuale di carica rimasta quando disponibile</string>

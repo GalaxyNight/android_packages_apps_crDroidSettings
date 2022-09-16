@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
     <string name="crdroid_settings_title">إعدادات crDroid</string>
-    <string name="crdroid_settings_summary">خيارات وإعدادات crDroid</string>
+    <string name="crdroid_settings_summary">تخصيص crDriod</string>
     <string name="crdroid_personalization_category">التخصيص</string>
     <string name="crdroid_addons_category">الإضافات</string>
     <!-- Personalization Categories -->
@@ -52,13 +52,13 @@
     <string name="lockclock_summary">إظهار او تعديل خيارت عرض الساعة المصغرة</string>
     <!-- Network traffic -->
     <string name="network_traffic_settings_title">حركة شبكة الاتصال</string>
-    <string name="network_traffic_settings_summary">رصد حركة وسرعة بينات الشبكة</string>
+    <string name="network_traffic_settings_summary">عرض وتخصيص المستويات الحالية لمرور الشبكة</string>
     <string name="network_traffic_location_title">الموقع</string>
     <string name="network_traffic_location_disable">معطّل</string>
     <string name="network_traffic_location_statusbar">شريط الحالة</string>
-    <string name="network_traffic_location_quick_statusbar">شريط الٱعدادات السريعة</string>
+    <string name="network_traffic_location_quick_statusbar">شريط الإعدادات السريعة</string>
     <string name="network_traffic_mode_title">وضع العرض</string>
-    <string name="network_traffic_mode_up">الصادر</string>
+    <string name="network_traffic_mode_up">الرفع فقط</string>
     <string name="network_traffic_mode_down">الوارد</string>
     <string name="network_traffic_mode_all">الصادر والوارد</string>
     <string name="network_traffic_autohide">إخفاء تلقائي</string>
@@ -72,11 +72,11 @@
     <string name="network_traffic_units_bits">أمتار في الثانية (م/ث)</string>
     <string name="network_traffic_units_kilobits">كيلوبت في الثانية (kb/s)</string>
     <string name="network_traffic_units_megabits">ميجابت في الثانية (Mb/s)</string>
-    <string name="network_traffic_units_bytes">أمتار في الثانية (م/ث)</string>
+    <string name="network_traffic_units_bytes">بايت في الثانية(ب\ث)</string>
     <string name="network_traffic_units_kilobytes">كيلوبايت في الثانية (kB/s)</string>
     <string name="network_traffic_units_megabytes">ميغابايت في الثانية (MB/s)</string>
     <string name="network_traffic_hidearrow">اخفاء الاسهم</string>
-    <string name="network_traffic_hidearrow_summary">إخفاء أسهم مؤشر حركة البيانات</string>
+    <string name="network_traffic_hidearrow_summary">إخفاء اسهم مؤشر حركة البيانات</string>
     <string name="network_traffic_refresh_interval_title">الفاصل الزمني للتحديث</string>
     <string name="network_traffic_refresh_interval_summary">المدة التي يتم بعدها إعادة قياس السرعة</string>
     <!-- Settings summary  -->
@@ -94,16 +94,16 @@
     <string name="recents_default_category">AOSP</string>
     <string name="recents_omni_category">تحويل اومني</string>
     <!-- AOSP Recents -->
-    <string name="aosp_first_time_title">التطبيقات الأخيرة AOSP</string>
+    <string name="aosp_first_time_title">تطبيقات AOSP الأخيرة</string>
     <string name="aosp_first_time_message">تمكين سطح المكتب الموسع، فسيتم تجاوز التطبيقات الأخيرة في ملء الشاشة.</string>
     <!-- Hide Apps from Recents -->
-    <string name="hide_apps_from_recents_title">إخفاء تطبيقات من التطبيقات الأخيرة</string>
+    <string name="hide_apps_from_recents_title">إخفاء التطبيقات عن الظهور مع التطبيقات الأخيرة</string>
     <string name="hide_apps_from_recents_summary">إخفاء التطبيقات من الظهور في الشاشة الأخيرة</string>
-    <string name="hide_from_recents_add_app">اظافة التطبيق إلى القائمة المخفية</string>
+    <string name="hide_from_recents_add_app">إضافة التطبيق إلى قائمة التطبيقات المخفية</string>
     <string name="hide_from_recents_picker_title">إخفاء هذه التطبيقات تلقائيًا</string>
     <string name="hide_from_recents_picker_summary">سيتم إخفاء هذه التطبيقات تلقائياً من شاشة التطبيقات الحديثة عند فتحها في المرة القادمة</string>
     <!-- OmniSwitch Recents -->
-    <string name="recents_use_omniswitch_title">إستخدامها في معاينة التطبيقات الأخيرة</string>
+    <string name="recents_use_omniswitch_title">استخدام في معاينة التطبيقات الأخيرة</string>
     <string name="recents_use_omniswitch_summary">إستخدام مبدّل Omni بدلاً من عرض التطبيقات الأخيرة الافتراضية</string>
     <string name="omniswitch_start_settings_title">الإعدادات</string>
     <string name="omniswitch_start_settings_summary">عرض إعدادات OmniSwitch</string>
@@ -125,7 +125,7 @@
     <string name="lockscreen_shortcuts_summary">تكوين الاختصارات في أسفل الشاشة</string>
     <!-- Slim DSLV -->
     <string name="shortcut_action_longpress">ضغط مطول:</string>
-    <string name="shortcut_action_select_action_longpress">إختر إجراء الضغط المطول:</string>
+    <string name="shortcut_action_select_action_longpress">اختر إجراء الضغط المطول:</string>
     <string name="shortcut_action_select_action">اختر الإجراء:</string>
     <string name="shortcut_action_select_action_newaction">اختر الإجراء الجديد:</string>
     <string name="shortcut_action_reset">إعادة تعيين</string>
@@ -141,11 +141,11 @@
     <string name="shortcut_action_help_button">زر</string>
     <string name="shortcut_action_help_app">التطبيق</string>
     <string name="shortcut_action_help_icon">، أثناء إختيار الرمز سيتم إحضار خيارات التخصيص</string>
-    <string name="shortcut_action_help_main">لإضافة %1$s، أختر أيقونة الإضافة. حالما تتم إضافة %1$s ، اختيار الصف سيغير الهدف %2$s\n\n لإزالة %1$s, مرر الصف أفقياً يميناً او يساراً. إعادة ترتيب %1$s في القائمة بواسطة سحب نقطة الارتساء عمودياً على اليسار.\n\n لمسح او اعادة التعيين إلى الإعدادات الافتراضية، حدد رمز إعادة تعيين.</string>
+    <string name="shortcut_action_help_main">لإضافة %1$s، اختر أيقونة الإضافة. حالما تتم إضافة %1$s ، اختيار الصف سيغير الهدف %2$s\n\n لإزالة %1$s, مرر الصف أفقياً يميناً او يساراً. إعادة ترتيب %1$s في القائمة بواسطة سحب نقطة الارتساء عمودياً على اليسار.\n\n لمسح أو إعادة التعيين إلى الإعدادات الافتراضية، حدد رمز إعادة تعيين.</string>
     <string name="shortcut_action_help_delete_last_entry">حذف كل %1$s في القائمة سيعطل المزيّة تماماً.</string>
     <string name="shortcut_action_help_pie_second_layer_delete_last_entry">حذف كل %1$s في القائمة سيعطل الطبقة الثانية في الدائرة بشكل كامل.</string>
     <string name="shortcuts_applications">التطبيقات</string>
-    <string name="shortcuts_select_custom_app_title">إختر تطبيقاً معيناً</string>
+    <string name="shortcuts_select_custom_app_title">اختر تطبيقاً معيناً</string>
     <string name="shortcuts_icon_picker_type">حدد نوع الايقونة:</string>
     <string name="shortcuts_icon_default">إفتراضي</string>
     <string name="shortcuts_icon_presets">أيقونات النظام</string>
@@ -349,7 +349,7 @@
     <string name="double_tap_sleep_anywhere_summary">النقر مرتين على شاشة القفل لدخول الهاتف في وضع الإرساء</string>
     <!-- Power menu on secure lockscreen -->
     <string name="lockscreen_enable_power_menu_title">قائمة زر التشغيل</string>
-    <string name="lockscreen_enable_power_menu_summary">السماح بالوصول إلى قائمة الطاقة في شاشة القفل المؤمنة</string>
+    <string name="lockscreen_enable_power_menu_summary">السماح بالوصول إلى قائمة التشغيل اثناء قفل الشاشة</string>
     <string name="lockscreen_secure_power_menu_title">قائمة التشغيل الآمنة</string>
     <string name="lockscreen_secure_power_menu_summary">السماح بإجراء قائمة التشغيل فقط بعد المصادقة</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">سرعة الإضاءة السلسة</string>
     <string name="pulse_solid_units_count">عدد الخطوط الصلبة</string>
     <string name="pulse_solid_units_opacity">عتامة الخطوط الصلبة</string>
+    <string name="pulse_solid_units_rounded_title">زوايا دائرية للشاشة</string>
+    <string name="pulse_solid_units_rounded_summary">خطوط صلبة مع نصائح مقربة</string>
     <string name="pulse_solid_dimen_category">إعدادات وضع الخطوط الصلبة</string>
     <string name="fling_lavalamp_color_from">بداية اللون للإضاءة السلسة</string>
     <string name="fling_lavalamp_color_to">نهاية اللون للإضاءة السلسة</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">نمط البطارية</string>
     <string name="status_bar_battery_style_icon_portrait">أيقونة رأسية</string>
-    <string name="status_bar_battery_style_icon_landscape">أيقونة أفقية</string>
+    <string name="status_bar_battery_style_icon_rlandscape">أيقونة أفقي (يمين)</string>
+    <string name="status_bar_battery_style_icon_landscape">أيقونة أفقي (يسار)</string>
     <string name="status_bar_battery_style_circle">دائرة</string>
     <string name="status_bar_battery_style_dotted_circle">دائرة منقطة</string>
-    <string name="status_bar_battery_style_square">مربع</string>
-    <string name="status_bar_battery_style_solid">صلبة</string>
+    <string name="status_bar_battery_style_filled_circle">دائرة معبأة</string>
     <string name="status_bar_battery_style_text">نص</string>
     <string name="status_bar_battery_style_hidden">إخفاء</string>
     <string name="status_bar_battery_style_tile_title">تجاوز تجانب البطارية</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">نسبة البطارية</string>
     <string name="status_bar_battery_percentage_default">إخفاء</string>
     <string name="status_bar_battery_percentage_text_inside">داخل أيقنة البطارية</string>
-    <string name="status_bar_battery_percentage_text_next">جانب أيقونة البطارية</string>
+    <string name="status_bar_battery_percentage_text_next_right">بجانب الأيقونة (يمين)</string>
+    <string name="status_bar_battery_percentage_text_next_left">بجانب الأيقونة (يسار)</string>
     <string name="status_bar_battery_text_position_title">موقع النسبة المئوية للبطارية</string>
     <string name="status_bar_battery_text_position_left">يسار الايقونة</string>
     <string name="status_bar_battery_text_position_right">يمين الايقونة</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">العرض المحيطي</string>
     <string name="doze_display_summary">تكوين إعدادات العرض المحيطي</string>
     <string name="doze_sensor_title">قاعد المجسات</string>
+    <string name="raise_to_wake_title">استيقظ</string>
+    <string name="raise_to_wake_summary">تشغيل الهاتف بدلًا من عرض الإشعارات</string>
     <string name="tilt_title">الإمالة</string>
     <string name="tilt_summary">إشعارات النبض عند الإمالة</string>
     <string name="pickup_title">الالتقاط</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">مشاركة crDroid</string>
     <string name="share_crdroid_summary">اسمحوا للآخرين بمعرفة crDroid</string>
+    <string name="share_message">تعرف على ما هو \"سي ار درويد\" حول @ https://crdroid.net</string>
     <string name="share_chooser_title">مشاركة crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">أصوات الشحن</string>
     <string name="charging_sounds_settings_summary">تخصيص الصوت الذي يتم تشغيله عند توصيل مصدر طاقة أو قطع الاتصال به</string>
-    <string name="charging_sounds_enabled_title">تمكين</string>
+    <string name="charging_sounds_enabled_title">صوت شحن البطارية</string>
     <string name="charging_sounds_enabled_summary">تشغيل صوت عند توصيل مصدر طاقة أو قطع الاتصال به</string>
     <string name="power_notifications_vibrate_title">إهتزاز</string>
-    <string name="charging_sounds_ringtone_title">صوت الإشعار</string>
     <string name="charging_sounds_ringtone_silent">صامت</string>
+    <string name="wired_charging_sounds_title">شحن سلكي</string>
+    <string name="wireless_charging_sounds_title">الشحن اللاسلكي</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">مانع قفل التنبيهات</string>
     <string name="wakelock_blocker_summary">حظر النظام من تأمين التنبيهات</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">متوسط</string>
     <string name="rounded_high">عالي</string>
     <string name="rounded_extreme">الأقصى</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">نمط إشارة الشبكة</string>
+    <string name="signal_style_summary">تعيين نمط رمز الإشارة المخصص</string>
+    <string name="wifi_style_title">نمط WiFi</string>
+    <string name="wifi_style_summary">تعيين نمط رمز WIFI مخصص</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">إعادة تعيين الإحصائيات</string>
     <string name="battery_stats_message">سيؤدي ذلك إلى إعادة تعيين إحصائيات محفوظات البطارية. هل ترغب في المتابعة؟</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">تمكين النقر المزدوج لوضع السكون</string>
     <string name="full_gesture_mode_dt2s_summary">النقر المزدوج على ايي مساحة فارغة في شريط التنقل لإيقاف تشغيل الشاشة.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">تنبيه VPN</string>
-    <string name="qs_footer_warnings_summary">عرض التنبيه عند مراقبة الشبكة أو توصيلها عبر VPN</string>
+    <string name="qs_footer_warnings_title">تنبيهات سفلية</string>
+    <string name="qs_footer_warnings_summary">عرض تحذير أسفل لوحة الإعدادات السريعة عندما تكون الشبكة مراقبة عن طريق تطبيقات خارجية أو شبكة افتراضية</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">رمز حساب المستخدم</string>
     <string name="qs_footer_users_icon_summary">عرض رمز إمكانية الوصول متعدد المستخدمين عند توفرها</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">إخفاء</string>
     <string name="stock_statusbar_in_hide">إرتفاع شريط الحالة الأصلي</string>
     <string name="stock_statusbar_in_hide_summary">إستخدام شريط الحالة الإفتراضي في الاخفاء</string>
+    <string name="display_kill_notch_title">اقتل النوتش</string>
+    <string name="display_kill_notch_summary">اخفاء النوتش بالكامل لتطبيقات ملء الشاشة</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">تطبيقات ملء الشاشة</string>
     <string name="display_cutout_force_fullscreen_summary">فرض التطبيقات على تجاهل مساحة النوتش</string>
@@ -2163,19 +2177,14 @@
     <string name="aggressive_standby_summary">تقييد التطبيقات من تشغيل في الخلفية</string>
     <string name="aggressive_battery_saver_title">تمكين تلقائي مع موفر البطارية </string>
     <string name="aggressive_battery_saver_summary">تفعيل البطارية العدوانية  بشكل تلقائي عند تمكين وضع موفر بطارية الشحن</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">نسبة البطارية</string>
-    <string name="battery_percentage_off">تعطيل</string>
-    <string name="battery_percentage_next">تفعيل</string>
-    <string name="battery_percentage_inside">تمكين (أيقونة داخلية)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">تقديرات البطارية</string>
     <string name="battery_estimate_summary">عرض يقدر عمر البطارية المتبقية عندما تكون متاحة</string>
     <!-- Refresh rate -->
     <string name="default_refresh_rate_title">معدل التحديث الافتراضي</string>
-    <string name="peak_refresh_rate_title_custom">معدل التحديث الأقصى</string>
-    <string name="battery_saver_refresh_rate_title">Reduce refresh rate</string>
-    <string name="battery_saver_refresh_rate_summary">Use 60Hz as max refresh rate to save power in Battery Saver mode</string>
+    <string name="peak_refresh_rate_title_custom">أقصي معدل لتحديث الشاشة</string>
+    <string name="battery_saver_refresh_rate_title">تقليل معدل تحديث الشاشة</string>
+    <string name="battery_saver_refresh_rate_summary">استخدم 60 اطار كحد اقصى لتحديث الشاشة لتوفير الطاقة عندما يكون موفر الطاقة مفعل</string>
     <!-- Ambient edge lighting -->
     <string name="pulse_ambient_light_title">إضاءة الحافة</string>
     <string name="pulse_ambient_light_summary">تضيء الحواف الجانبية للشاشة على نبض الإعلام</string>
@@ -2372,14 +2381,14 @@
     <string name="applock_unlocked">مفتوح</string>
     <string name="applock_locked_apps">تطبيقات مقفلة</string>
     <string name="applock_unlocked_apps">التطبيقات المفتوحة</string>
-    <string name="applock_lock_after_title">Lock app after</string>
-    <string name="applock_lock_after_instantly">Instantly</string>
-    <string name="applock_lock_after_15_seconds">15 seconds</string>
-    <string name="applock_lock_after_screen_off">Screen off</string>
-    <string name="applock_lock_after_summary">App will be locked after selected timeout</string>
-    <string name="applock_lock_after_instantly_summary">App will be locked instantly when closed</string>
-    <string name="applock_lock_after_15_seconds_summary">App will be locked 15 seconds after closing</string>
-    <string name="applock_lock_after_screen_off_summary">App will be locked when screen is turned off</string>
+    <string name="applock_lock_after_title">قفل التطبيق بعد</string>
+    <string name="applock_lock_after_instantly">على الفور</string>
+    <string name="applock_lock_after_15_seconds">15 ثانية</string>
+    <string name="applock_lock_after_screen_off">قفل الشاشة</string>
+    <string name="applock_lock_after_summary">سيتم قفل التطبيق بعد المده المحدده</string>
+    <string name="applock_lock_after_instantly_summary">سيتم قفل التطبيق فورا عند إغلاقه</string>
+    <string name="applock_lock_after_15_seconds_summary">سيتم قفل التطبيق بعد 15 ثانية من غلق التطبيق</string>
+    <string name="applock_lock_after_screen_off_summary">سيتم قفل التطبيق عند إيقاف تشغيل الشاشة</string>
     <string name="applock_notification_info">يمكنك إظهار/إخفاء محتوى الإشعارات على أساس كل تطبيق بالنقر على أيقونة الإشعارات التي تظهر في تفضيل التطبيقات المقفلة</string>
     <string name="applock_show_notif">عرض محتوى الإشعارات</string>
     <string name="applock_hide_notif">إخفاء محتوى الإشعار</string>
@@ -2466,10 +2475,10 @@
     <string name="volume_panel_oreo">أوريو</string>
     <string name="volume_panel_tiled">تجانب</string>
     <!-- Battery health -->
-    <string name="current_battery_capacity">Current battery capacity</string>
-    <string name="designed_battery_capacity">Designed battery capacity</string>
-    <string name="battery_charge_cycles">Charge cycles completed</string>
+    <string name="current_battery_capacity">السعة الحالية للبطارية</string>
+    <string name="designed_battery_capacity">السعة الإجمالية للبطارية</string>
+    <string name="battery_charge_cycles">دورات الشحن المكتملة</string>
     <!-- Ambient Display Swipe Gesture -->
-    <string name="ambient_swipe_title">Ambient display swipe</string>
-    <string name="ambient_swipe_summary">Allow waking up device by swiping up or down on Ambient Display</string>
+    <string name="ambient_swipe_title">إضاءة الشاشة عند وصول إشعار</string>
+    <string name="ambient_swipe_summary">السماح باستيقاظ الجهاز عن طريق التمرير لأعلى أو لأسفل على شاشة العرض المحيطي</string>
 </resources>

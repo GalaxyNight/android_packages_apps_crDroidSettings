@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -48,8 +48,8 @@
     <string name="cancel">ரத்துசெய்</string>
     <string name="save">சேமி</string>
     <!-- Misc strings -->
-    <string name="lockclock_title">Clock widget</string>
-    <string name="lockclock_summary">View or change how the \'cLock\' widget will display</string>
+    <string name="lockclock_title">கடிகார விட்ஜெட்</string>
+    <string name="lockclock_summary">கடிகார விட்ஜெட் எவ்வாறு காண்பிக்கப்படும் என்பதைப் பார்க்க அல்லது மாற்ற</string>
     <!-- Network traffic -->
     <string name="network_traffic_settings_title">பிணைய போக்குவரத்து கண்காணிப்பு</string>
     <string name="network_traffic_settings_summary">நடப்பு பிணைய போக்குவரத்து நிலைகள் திரை மற்றும் தனிப்பயனாக்கு </string>
@@ -94,21 +94,21 @@
     <string name="recents_default_category">AOSP</string>
     <string name="recents_omni_category">OmniSwitch</string>
     <!-- AOSP Recents -->
-    <string name="aosp_first_time_title">AOSP recents</string>
-    <string name="aosp_first_time_message">Immersive recents setting is overridden if the expanded desktop is enabled.</string>
+    <string name="aosp_first_time_title">சமீபத்திய AOSP க்கள்</string>
+    <string name="aosp_first_time_message">விரிவாக்கப்பட்ட டெஸ்க்டாப் இயக்கப்பட்டால் முழு ரெசென்ட் அமைப்பு மீறப்படும்.</string>
     <!-- Hide Apps from Recents -->
-    <string name="hide_apps_from_recents_title">Hide apps from recents</string>
-    <string name="hide_apps_from_recents_summary">Hide apps from appearing in recents screen</string>
-    <string name="hide_from_recents_add_app">Add app to Hide list</string>
-    <string name="hide_from_recents_picker_title">Automatically hide for these apps</string>
-    <string name="hide_from_recents_picker_summary">These apps will be automatically hide from recents screen when they are opened next time</string>
+    <string name="hide_apps_from_recents_title">சமீபத்திய பயன்பாடுகளிலிருந்து பயன்பாடுகளை மறைக்க</string>
+    <string name="hide_apps_from_recents_summary">பயன்பாடுகள் பின்னடைவு திரையில் தோன்றுவதை மறைக்க</string>
+    <string name="hide_from_recents_add_app">மறை பட்டியலில் செயலியைச் சேர்</string>
+    <string name="hide_from_recents_picker_title">இந்த செயலிகளை தானாக மறைக்கவும்</string>
+    <string name="hide_from_recents_picker_summary">இந்தச் செயலிகளை அடுத்த முறை திறக்கும்போது தானாகவே ரிசென்ட் திரையிலிருந்து மறைக்கப்படும்</string>
     <!-- OmniSwitch Recents -->
-    <string name="recents_use_omniswitch_title">Use for recents</string>
-    <string name="recents_use_omniswitch_summary">Use OmniSwitch instead of the default recents view</string>
-    <string name="omniswitch_start_settings_title">Settings</string>
-    <string name="omniswitch_start_settings_summary">View the settings for OmniSwitch</string>
-    <string name="omniswitch_first_time_title">OmniSwitch Recents</string>
-    <string name="omniswitch_first_time_message">Make sure you have also enabled OmniSwitch by opening OmniSwitch settings.</string>
+    <string name="recents_use_omniswitch_title">ரிசென்ட்களுக்கு பயன்படுத்தவும்</string>
+    <string name="recents_use_omniswitch_summary">இயல்பான ரிசென்ட் திரைக்குப் பதிலாக OmniSwitch-ஐ பயன்படுத்தவும்</string>
+    <string name="omniswitch_start_settings_title">அமைப்புகள்</string>
+    <string name="omniswitch_start_settings_summary">OmniSwitch அமைப்புகளை காண்க</string>
+    <string name="omniswitch_first_time_title">OmniSwitch ரிசென்ட்ஸ்</string>
+    <string name="omniswitch_first_time_message">OmniSwitch அமைப்புகளைத் திறப்பதன் மூலம் OmniSwitch-ஐ ஆன் செய்யப்பட்டுள்ளது என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்.</string>
     <!-- Lockscreen categories -->
     <string name="lockscreen_shortcuts_category">குறுக்குவழிகள்</string>
     <string name="lockscreen_interface_category">இடைமுகம்</string>
@@ -124,51 +124,51 @@
     <string name="lockscreen_shortcuts_title">குறுக்குவழிகள்</string>
     <string name="lockscreen_shortcuts_summary">திரையின் அடிப்பகுதியில் குறுக்குவழிகளை உள்ளமைக்கவும்</string>
     <!-- Slim DSLV -->
-    <string name="shortcut_action_longpress">Longpress:</string>
-    <string name="shortcut_action_select_action_longpress">Choose longpress action:</string>
-    <string name="shortcut_action_select_action">Choose action:</string>
-    <string name="shortcut_action_select_action_newaction">Choose new action:</string>
-    <string name="shortcut_action_reset">Reset</string>
-    <string name="shortcut_action_add">Add</string>
-    <string name="shortcut_action_reset_message">Reset all entries to default?</string>
-    <string name="shortcut_action_max">Maximum entries size has been reached</string>
-    <string name="shortcut_action_warning">Warning</string>
-    <string name="shortcut_action_warning_message">It is not possible to delete last entry</string>
-    <string name="shortcut_action_disable_message">Disabled\nAdd an entry to enable this feature</string>
-    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app.</string>
-    <string name="shortcut_duplicate_entry">The chosen action cannot be added twice</string>
-    <string name="shortcut_action_help_shortcut">shortcut</string>
-    <string name="shortcut_action_help_button">button</string>
-    <string name="shortcut_action_help_app">app</string>
-    <string name="shortcut_action_help_icon">, while selecting the icon will bring up customization options</string>
-    <string name="shortcut_action_help_main">To add a %1$s, select the Add icon. Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right. Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
-    <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
-    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Removing every %1$s in the list will disable the second pie layer entirely.</string>
-    <string name="shortcuts_applications">Applications</string>
-    <string name="shortcuts_select_custom_app_title">Select custom application</string>
-    <string name="shortcuts_icon_picker_type">Select icon type:</string>
-    <string name="shortcuts_icon_default">Default</string>
-    <string name="shortcuts_icon_presets">System icons</string>
-    <string name="shortcuts_icon_custom">Gallery</string>
-    <string name="shortcuts_icon_picker_choose_icon_title">Choose icon</string>
-    <string name="shortcuts_icon_picker_alarm">Alarm</string>
-    <string name="shortcuts_icon_picker_andy">Andy</string>
-    <string name="shortcuts_icon_picker_battery">Battery</string>
-    <string name="shortcuts_icon_picker_browser">Browser</string>
-    <string name="shortcuts_icon_picker_calendar">Calendar</string>
-    <string name="shortcuts_icon_picker_camera">Camera</string>
-    <string name="shortcuts_icon_picker_cloud">Cloud</string>
-    <string name="shortcuts_icon_picker_contact">Contact</string>
-    <string name="shortcuts_icon_picker_directdial">Direct Dial</string>
-    <string name="shortcuts_icon_picker_directmessage">Direct Message</string>
-    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcut_action_longpress">நீண்ட பிரஸ்:</string>
+    <string name="shortcut_action_select_action_longpress">லாங்பிரஸ் செயலைத் தேர்வுசெய்க:</string>
+    <string name="shortcut_action_select_action">செயலைத் தேர்வுசெய்க:</string>
+    <string name="shortcut_action_select_action_newaction">புதிய செயலைத் தேர்வுசெய்க:</string>
+    <string name="shortcut_action_reset">மீட்டமைக்கவும்</string>
+    <string name="shortcut_action_add">சேர்</string>
+    <string name="shortcut_action_reset_message">அனைத்து உள்ளீடுகளும் இயல்புநிலைக்கு மீட்கவா ₹?</string>
+    <string name="shortcut_action_max">பதிவுகள் அதிகபட்ச அளவை எட்டிவிட்டது</string>
+    <string name="shortcut_action_warning">எச்சரிக்கை</string>
+    <string name="shortcut_action_warning_message">கடைசி உள்ளீட்டை நீக்க இயலாது</string>
+    <string name="shortcut_action_disable_message">இந்த வசதியை செயல்படுத்த உள்ளீடு Disabled\nAdd</string>
+    <string name="shortcut_image_not_valid">தேர்ந்தெடுக்கப்பட்ட பயன்பாடு ஒரு செல்லாத படவுரு திரும்ப அல்லது படத்தை நறுக்க ஆதரிக்கவில்லை. மற்றொரு பயன்பாட்டை உபயோகிக்கவும்.</string>
+    <string name="shortcut_duplicate_entry">தேர்ந்தெடுக்கப்பட்ட செயலை இரண்டு முறை சேர்க்க முடியாது</string>
+    <string name="shortcut_action_help_shortcut">எளியவழி</string>
+    <string name="shortcut_action_help_button">பொத்தான்</string>
+    <string name="shortcut_action_help_app">செயலிகள்</string>
+    <string name="shortcut_action_help_icon">, அந்த icon-ஐ தேர்வு செய்தால் காஸ்டோமிசேஷன் ஆப்ஷன் காண்பிக்கப்படும்</string>
+    <string name="shortcut_action_help_main">%1$sசேர்க்க, சேர் படவுருவை தேர்ந்தெடு. %1$s சேர்க்கப்படுகிறது ஒருமுறை வரிசையை தேர்ந்தெடுத்து மாற்றம் இலக்கு%2$s\n\nTo %1$s, கிடைமட்டமாக வரிசையை விட்டு தேய்க்கவும் அல்லது வலது நீக்கும். %1$s, left.\n\nTo செங்குத்தாக தொகுப்பாளர் இழுப்பதன் மூலம் பட்டியலில் தெளிவாக மீண்டும் ஒழுங்கு அல்லது இயல்புநிலைகளுக்கு மீட்டமைக்க, மீட்டமை படவுரு தேர்ந்தெடுக்கவும்.</string>
+    <string name="shortcut_action_help_delete_last_entry">இந்த அம்சம் முற்றிலும் முடக்கும் பட்டியலில் ஒவ்வொரு %1$s அகற்றுகிறது.</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">இந்த அம்சம் முற்றிலும் முடக்கும் பட்டியலில் ஒவ்வொரு %1$s அகற்றுகிறது.</string>
+    <string name="shortcuts_applications">செயலிகள்</string>
+    <string name="shortcuts_select_custom_app_title">விரும்பிய பயன்பாட்டை தெரிவு செய்க</string>
+    <string name="shortcuts_icon_picker_type">சின்னத்தின் வகையை தேர்ந்தெடுக்கவும்:</string>
+    <string name="shortcuts_icon_default">இயல்புநிலை</string>
+    <string name="shortcuts_icon_presets">முறைமை படவுருக்கள்</string>
+    <string name="shortcuts_icon_custom">காட்சியகம்</string>
+    <string name="shortcuts_icon_picker_choose_icon_title">சின்னம் தேர்வு</string>
+    <string name="shortcuts_icon_picker_alarm">அலாரம்</string>
+    <string name="shortcuts_icon_picker_andy">ஆண்டி</string>
+    <string name="shortcuts_icon_picker_battery">பேட்டரி</string>
+    <string name="shortcuts_icon_picker_browser">உலாவி</string>
+    <string name="shortcuts_icon_picker_calendar">நாள்காட்டி</string>
+    <string name="shortcuts_icon_picker_camera">கேமரா</string>
+    <string name="shortcuts_icon_picker_cloud">மேகம்</string>
+    <string name="shortcuts_icon_picker_contact">தொடர்புகள்</string>
+    <string name="shortcuts_icon_picker_directdial">நேரடி டயல்</string>
+    <string name="shortcuts_icon_picker_directmessage">நேரடிச் செய்தி</string>
+    <string name="shortcuts_icon_picker_drive">ஓட்டு</string>
     <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
-    <string name="shortcuts_icon_picker_email">Email</string>
-    <string name="shortcuts_icon_picker_email2">Email Alternate</string>
-    <string name="shortcuts_icon_picker_evernote">Evernote</string>
-    <string name="shortcuts_icon_picker_facebook">Facebook</string>
-    <string name="shortcuts_icon_picker_favorite">Favorite</string>
-    <string name="shortcuts_icon_picker_file_browser">File Browser</string>
+    <string name="shortcuts_icon_picker_email">மின்னஞ்சல்</string>
+    <string name="shortcuts_icon_picker_email2">மாற்று மின்னஞ்சல்</string>
+    <string name="shortcuts_icon_picker_evernote">எவெர்னோட்</string>
+    <string name="shortcuts_icon_picker_facebook">ஃபேஸ்புக்</string>
+    <string name="shortcuts_icon_picker_favorite">பிடித்தவை</string>
+    <string name="shortcuts_icon_picker_file_browser">கோப்பு உலாவி</string>
     <string name="shortcuts_icon_picker_file_browser2">File Browser Alternate</string>
     <string name="shortcuts_icon_picker_fitness">Fitness</string>
     <string name="shortcuts_icon_picker_gallery">Gallery</string>
@@ -206,55 +206,55 @@
     <string name="airplay">Airplay</string>
     <string name="android">Android</string>
     <string name="badoo">Badoo</string>
-    <string name="battery">Battery</string>
-    <string name="bluetooth">Bluetooth</string>
-    <string name="bookmarks">Bookmarks</string>
-    <string name="browser">Browser</string>
-    <string name="browser2">Browser2</string>
-    <string name="calculator">Calculator</string>
-    <string name="calendar">Calendar</string>
-    <string name="calls">Calls</string>
-    <string name="camera">Camera</string>
+    <string name="battery">பேட்டரி</string>
+    <string name="bluetooth">ப்ளூடூத்</string>
+    <string name="bookmarks">அடையாளக்குறிகள்</string>
+    <string name="browser">உலாவி</string>
+    <string name="browser2">உலாவி2</string>
+    <string name="calculator">கணிப்பான்</string>
+    <string name="calendar">நாள்காட்டி</string>
+    <string name="calls">அழைப்புகள்</string>
+    <string name="camera">கேமரா</string>
     <string name="chrome">Chrome</string>
-    <string name="clock">Clock</string>
-    <string name="cnn">Cnn</string>
+    <string name="clock">கடிகாரம்</string>
+    <string name="cnn">சிஎன்என்</string>
     <string name="deezer2">Deezer2</string>
     <string name="deezer">Deezer</string>
-    <string name="dolphin2">Dolphin</string>
-    <string name="downloads">Downloads</string>
+    <string name="dolphin2">டால்பின்</string>
+    <string name="downloads">பதிவிறக்கங்கள்</string>
     <string name="dropbox">Dropbox</string>
     <string name="ebay">Ebay</string>
-    <string name="email">Email</string>
-    <string name="evernote">Evernote</string>
-    <string name="explorer">Explorer</string>
-    <string name="falcon">Falcon</string>
-    <string name="fb">Facebook</string>
-    <string name="flipboard">Flipboard</string>
-    <string name="foursquare">Foursquare</string>
-    <string name="firefox">Firefox</string>
+    <string name="email">மின்னஞ்சல்</string>
+    <string name="evernote">எவெர்னோட்</string>
+    <string name="explorer">உலவி</string>
+    <string name="falcon">பால்கன்</string>
+    <string name="fb">முகநூல்</string>
+    <string name="flipboard">Flipboard என்பது</string>
+    <string name="foursquare">ஃபோர்ஸ்கொயர்</string>
+    <string name="firefox">பயர்பாக்ஸ்</string>
     <string name="googlebuzz">Google buzz</string>
-    <string name="googledocs">Google docs</string>
-    <string name="googlewallet">Google wallet</string>
-    <string name="line">Line</string>
-    <string name="mic">Mic</string>
-    <string name="newyorktimes">Newyork times</string>
-    <string name="rootexplorer">Root explorer</string>
-    <string name="sim">Sim</string>
-    <string name="teamviewer">Teamviewer</string>
-    <string name="totalcommander">Total commander</string>
-    <string name="weather">Weather</string>
-    <string name="golocker">Go locker</string>
-    <string name="googlecurrents">Google currents</string>
-    <string name="googletalk">Google talk</string>
-    <string name="gosms">Go sms</string>
-    <string name="meebo">Meebo</string>
+    <string name="googledocs">கூகுள் டாகுமெண்ட்</string>
+    <string name="googlewallet">கூகுள் வாலட்</string>
+    <string name="line">வரி</string>
+    <string name="mic">ஒலிவாங்கி</string>
+    <string name="newyorktimes">நியூயார்க் முறை</string>
+    <string name="rootexplorer">ரூட் எக்ஸ்ப்ளோரர்</string>
+    <string name="sim">சிம்</string>
+    <string name="teamviewer">அணி பார்வையாளர்</string>
+    <string name="totalcommander">மொத்த தளபதி</string>
+    <string name="weather">வானிலை</string>
+    <string name="golocker">லாக்கர் செல்லுங்கள்</string>
+    <string name="googlecurrents">கூகிள் நீரோட்டங்கள்</string>
+    <string name="googletalk">கூகுள் டாக்</string>
+    <string name="gosms">எஸ். எம். எஸ்</string>
+    <string name="meebo">மீபோ</string>
     <string name="maps2">Maps2</string>
-    <string name="memorycleaner">Memory cleaner</string>
-    <string name="navigation">Navigation</string>
-    <string name="pulse">Pulse</string>
-    <string name="shazam">Shazam</string>
-    <string name="swiftkey">Swiftkey</string>
-    <string name="tmobile">Tmobile</string>
+    <string name="memorycleaner">நினைவக துடைப்பு</string>
+    <string name="navigation">வழிசெலுத்தல்</string>
+    <string name="pulse">பல்ஸ்</string>
+    <string name="shazam">ஷாஜாம்</string>
+    <string name="swiftkey">ஸ்விஃப்ட் விசை</string>
+    <string name="tmobile">டி மொபைல்</string>
     <string name="trash">Trash</string>
     <string name="games">Games</string>
     <string name="gmail">Gmail</string>
@@ -305,9 +305,9 @@
     <string name="shortcut_action_back">Back</string>
     <string name="shortcut_action_menu">Menu</string>
     <string name="shortcut_action_ime">Open IME Switcher</string>
-    <string name="shortcut_action_power_menu">Power menu</string>
-    <string name="shortcut_action_recent">Recents</string>
-    <string name="shortcut_action_power">Screen Off</string>
+    <string name="shortcut_action_power_menu">சக்தி மெனு</string>
+    <string name="shortcut_action_recent">சமீபத்திய</string>
+    <string name="shortcut_action_power">திரை அணைந்துள்ளது</string>
     <string name="shortcut_action_search">Search in app</string>
     <string name="shortcut_action_ring_vib">Ring/Vib</string>
     <string name="shortcut_action_ring_silent">Ring/Silent</string>
@@ -348,8 +348,8 @@
     <string name="double_tap_sleep_anywhere_title">தூங்க தட்டவும்</string>
     <string name="double_tap_sleep_anywhere_summary">சாதனத்தை உபயோகிக்க திரையில் எந்த பகுதியிலும் இருமுறை தட்டவும்</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">மின்சக்தி மெனு</string>
-    <string name="lockscreen_enable_power_menu_summary">பாதுகாப்பான பூட்டுத் திரையில் சக்தி மெனுவை அணுக அனுமதிக்கவும்</string>
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
     <string name="lockscreen_secure_power_menu_title">பாதுகாப்பான மின்சக்தி பட்டியல்</string>
     <string name="lockscreen_secure_power_menu_summary">அங்கீகாரத்திற்குப் பிறகு மட்டுமே சக்தி மெனு செயலை அனுமதிக்கவும்</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Lava lamp speed</string>
     <string name="pulse_solid_units_count">Solid lines count</string>
     <string name="pulse_solid_units_opacity">Solid lines opacity</string>
+    <string name="pulse_solid_units_rounded_title">Rounded corners</string>
+    <string name="pulse_solid_units_rounded_summary">Solid lines with rounded tip</string>
     <string name="pulse_solid_dimen_category">Solid lines mode settings</string>
     <string name="fling_lavalamp_color_from">Lava Lamp start color</string>
     <string name="fling_lavalamp_color_to">Lava Lamp end color</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">பேட்டரி நடை</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
     <string name="status_bar_battery_style_circle">வட்டம்</string>
     <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
-    <string name="status_bar_battery_style_square">சதுரம்</string>
-    <string name="status_bar_battery_style_solid">திடம்</string>
+    <string name="status_bar_battery_style_filled_circle">Filled circle</string>
     <string name="status_bar_battery_style_text">உரை</string>
     <string name="status_bar_battery_style_hidden">Hidden</string>
     <string name="status_bar_battery_style_tile_title">Override battery tile</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">மின்கல சதவீதம்</string>
     <string name="status_bar_battery_percentage_default">Hidden</string>
     <string name="status_bar_battery_percentage_text_inside">படவுருக்குள்</string>
-    <string name="status_bar_battery_percentage_text_next">படவுருவிற்கு அருகில்</string>
+    <string name="status_bar_battery_percentage_text_next_right">Next to the icon (right)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Next to the icon (left)</string>
     <string name="status_bar_battery_text_position_title">Battery percent position</string>
     <string name="status_bar_battery_text_position_left">படவுருவின் இடதில்</string>
     <string name="status_bar_battery_text_position_right">படவுருவின் வலதில்</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Ambient display</string>
     <string name="doze_display_summary">Configure settings for ambient display</string>
     <string name="doze_sensor_title">Sensor based</string>
+    <string name="raise_to_wake_title">Wake up</string>
+    <string name="raise_to_wake_summary">Wake up the device instead of pulsing notifications</string>
     <string name="tilt_title">Tilt</string>
     <string name="tilt_summary">Pulse notifications on tilt</string>
     <string name="pickup_title">Pick up</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">crDroid ஐப் பகிர்</string>
     <string name="share_crdroid_summary">Let others know about crDroid</string>
+    <string name="share_message">Check out what #crDroid Android is all about @ https://crdroid.net/</string>
     <string name="share_chooser_title">crDroid ஐப் பகிர்</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1339,11 +1345,12 @@ recents_clear_all_location_title
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Charging sounds</string>
     <string name="charging_sounds_settings_summary">Customize sound played when connecting or disconnecting a power source</string>
-    <string name="charging_sounds_enabled_title">இயக்கு</string>
+    <string name="charging_sounds_enabled_title">Battery charging sound</string>
     <string name="charging_sounds_enabled_summary">Play a sound when connecting or disconnecting a power source</string>
     <string name="power_notifications_vibrate_title">அதிர்வு</string>
-    <string name="charging_sounds_ringtone_title">அறிவிப்பு ஒலி</string>
     <string name="charging_sounds_ringtone_silent">Silent</string>
+    <string name="wired_charging_sounds_title">Wired charging</string>
+    <string name="wireless_charging_sounds_title">Wireless charging</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Wakelock blocker</string>
     <string name="wakelock_blocker_summary">Block system wakelocks</string>
@@ -1493,7 +1500,7 @@ recents_clear_all_location_title
     <string name="volte_icon_summary">கிடைக்கும்போது VoLTE படவுருவைக் காட்டு</string>
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">VoWiFi icon</string>
-    <string name="vowifi_icon_summary">Display VoWiFi icon when available</string>
+    <string name="vowifi_icon_summary">கிடைக்கும்போது VoWiFi படவுருவைக் காட்டு</string>
     <string name="volte_vowifi_override_title">VoWiFi override</string>
     <string name="volte_vowifi_override_summary">Hide VoLTE when VoWiFi is available. This also overrides old style signal icon for VoWiFi.</string>
     <!-- Ad Away -->
@@ -1932,7 +1939,7 @@ recents_clear_all_location_title
     <string name="style_dark_overlay_amoled_black">Amoled Black</string>
     <string name="style_notification_title">Notification style</string>
     <string name="style_notification_auto">Automatic (system theme)</string>
-    <string name="style_notification_light">Light</string>
+    <string name="style_notification_light">வெளிச்சம்</string>
     <string name="style_notification_dark">Deep Grey</string>
     <string name="style_notification_black">Amoled Black</string>
     <string name="style_and_wallpaper_title">நடைகள் &amp; பின்புலங்கள்</string>
@@ -2013,6 +2020,11 @@ recents_clear_all_location_title
     <string name="rounded_medium">Medium</string>
     <string name="rounded_high">High</string>
     <string name="rounded_extreme">Extreme</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Signal bar style</string>
+    <string name="signal_style_summary">Set custom signal icon style</string>
+    <string name="wifi_style_title">WiFi bar style</string>
+    <string name="wifi_style_summary">Set custom wifi icon style</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">This will reset battery history stats. Would you like to continue?</string>
@@ -2039,8 +2051,8 @@ recents_clear_all_location_title
     <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
     <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">VPN எச்சரிக்கை</string>
-    <string name="qs_footer_warnings_summary">Display alert when network is monitored or connected via VPN</string>
+    <string name="qs_footer_warnings_title">Footer alerts</string>
+    <string name="qs_footer_warnings_summary">Display an alert at bottom of QS panel when network is monitored by external apps or VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">பயனர் கணக்கு படவுரு</string>
     <string name="qs_footer_users_icon_summary">Display multiuser accessibility icon when available</string>
@@ -2094,6 +2106,8 @@ recents_clear_all_location_title
     <string name="display_cutout_style_hide">மறை</string>
     <string name="stock_statusbar_in_hide">Stock statusbar height</string>
     <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
+    <string name="display_kill_notch_title">Kill notch</string>
+    <string name="display_kill_notch_summary">Kill notch completely for full screen apps</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">முழுத் திரை பயன்பாடுகள்</string>
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
@@ -2128,7 +2142,7 @@ recents_clear_all_location_title
     <string name="gaming_mode_summary">Customize Gaming mode preferences</string>
     <string name="gaming_mode_enabled_summary">Allow turning on Gaming mode</string>
     <string name="gaming_mode_app_picker_title">Automatically turn on for these apps</string>
-    <string name="add_gaming_mode_package_title">Add apps for Gaming mode</string>
+    <string name="add_gaming_mode_package_title">விளையாட்டு பயன்முறைக்கு பயன்பாடுகளைச் சேர்க்கவும்</string>
     <string name="add_gaming_mode_package_summary">Gaming mode will turn on automatically when these apps are opened and turn off when they are closed</string>
     <string name="gaming_mode_headsup_title">அறிவிப்புகளைத் தடு</string>
     <string name="gaming_mode_headsup_summary">Calls and alarms are exempted</string>
@@ -2166,11 +2180,6 @@ recents_clear_all_location_title
     <string name="aggressive_standby_summary">பயன்பாடுகள் பின்னணியில் இயங்குவதைத் தடு</string>
     <string name="aggressive_battery_saver_title">Auto-enable on battery saver</string>
     <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">மின்கல சதவீதம்</string>
-    <string name="battery_percentage_off">முடக்கப்பட்டுள்ளது</string>
-    <string name="battery_percentage_next">இயக்கப்பட்டுள்ளது</string>
-    <string name="battery_percentage_inside">இயக்கப்பட்டுள்ளது (படவுருக்குள்)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Battery estimate</string>
     <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>
@@ -2235,11 +2244,11 @@ recents_clear_all_location_title
     <!-- FOD pressed color -->
     <string name="fod_pressed_color_title">Fingerprint pressed color</string>
     <string name="fod_pressed_color_footer">Icons/colors may vary depending on which device you are using.</string>
-    <string name="fod_pressed_color_white">White</string>
+    <string name="fod_pressed_color_white">வெள்ளை</string>
     <string name="fod_pressed_color_cyan">Cyan</string>
-    <string name="fod_pressed_color_green">Green</string>
-    <string name="fod_pressed_color_yellow">Yellow</string>
-    <string name="fod_pressed_color_light_yellow">Light Yellow</string>
+    <string name="fod_pressed_color_green">பச்சை</string>
+    <string name="fod_pressed_color_yellow">மஞ்சள்</string>
+    <string name="fod_pressed_color_light_yellow">வெளிர் மஞ்சள்</string>
     <!-- FOD animations -->
     <string name="fod_recog_animation">Fingerprint animation</string>
     <string name="fod_recog_animation_summary">Shows an animation while reading your finger</string>
@@ -2270,7 +2279,7 @@ recents_clear_all_location_title
     <string name="fod_recog_animation_rog_supernova">Supernova</string>
     <string name="fod_recog_animation_shine">Shine</string>
     <string name="fod_recog_animation_smoke">Smoke</string>
-    <string name="fod_recog_animation_strings">Strings</string>
+    <string name="fod_recog_animation_strings">உரைகள்</string>
     <string name="fod_recog_animation_quantum">Quantum</string>
     <!-- Nightlight Fod -->
     <string name="fod_night_light_title">Disable night light when showing FOD</string>
@@ -2282,7 +2291,7 @@ recents_clear_all_location_title
     <string name="back_gesture_arrow_summary">Show an animated arrow for back gesture.</string>
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
-    <string name="platform_revision">Platform</string>
+    <string name="platform_revision">தளம்</string>
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">மொத்த RAM</string>
     <!-- Label for estimated remaining duration of dash battery charging -->
@@ -2363,8 +2372,8 @@ recents_clear_all_location_title
     <string name="clipboard_toast_info_show_important">Show only important alerts</string>
     <string name="clipboard_toast_info_show_all">Show all access alerts</string>
     <!-- Navbar styles -->
-    <string name="navbar_style_title">Navbar style</string>
-    <string name="navbar_default">Default</string>
+    <string name="navbar_style_title">வழிசெல்பட்டி நடை</string>
+    <string name="navbar_default">இயல்புநிலை</string>
     <string name="navbar_asus">ASUS</string>
     <string name="navbar_oneplus">OnePlus</string>
     <string name="navbar_oneui">One UI</string>
@@ -2389,8 +2398,8 @@ recents_clear_all_location_title
     <string name="applock_setup">Setup app locker</string>
     <string name="applock_overlay_summary">This feature is not available because this app is locked</string>
     <plurals name="applock_summary">
-        <item quantity="one">1 app locked</item>
-        <item quantity="other">%d apps locked</item>
+        <item quantity="one">1 செயலி பூட்டப்பட்டது</item>
+        <item quantity="other">%d செயலிகள் பூட்டப்பட்டன</item>
     </plurals>
     <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
     <!-- Navbar length -->
@@ -2398,7 +2407,7 @@ recents_clear_all_location_title
     <string name="hidden_label">Hidden</string>
     <string name="long_label">Long</string>
     <!-- Additional version details -->
-    <string name="about_device_name">Device</string>
+    <string name="about_device_name">சாதனம்</string>
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">In-call vibration options</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
@@ -2441,7 +2450,7 @@ recents_clear_all_location_title
     <string name="security_settings_face_unlock_redo_face_scan_summary">Remove existing face scan and create a new scan</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">Redo face scan</string>
     <string name="security_dashboard_summary_face_and_fingerprint">Screen lock, fingerprint, face unlock</string>
-    <string name="face_redo_confirm_btn">Redo</string>
+    <string name="face_redo_confirm_btn">மீண்டும்செய்</string>
     <string name="face_redo_warning_msg">Do you want to remove the existing face scan and create a new one?</string>
     <!-- QS Header data usage -->
     <string name="qs_datausage_title">Data usage</string>

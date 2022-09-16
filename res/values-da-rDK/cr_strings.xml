@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -348,7 +348,7 @@
     <string name="double_tap_sleep_anywhere_title">Tryk for at sove</string>
     <string name="double_tap_sleep_anywhere_summary">Dobbelttryk hvor som helst på låseskærmen for at sætte enheden i dvale</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Strømstyringsmenu</string>
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
     <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
     <string name="lockscreen_secure_power_menu_title">Secure power menu</string>
     <string name="lockscreen_secure_power_menu_summary">Allow power menu action only after authentication</string>
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Lava lamp speed</string>
     <string name="pulse_solid_units_count">Antal faste linjer</string>
     <string name="pulse_solid_units_opacity">Opacitet for faste linjer</string>
+    <string name="pulse_solid_units_rounded_title">Rounded corners</string>
+    <string name="pulse_solid_units_rounded_summary">Solid lines with rounded tip</string>
     <string name="pulse_solid_dimen_category">Indstillinger for faste linjer-tilstand</string>
     <string name="fling_lavalamp_color_from">Lavalampe indgangsfarve</string>
     <string name="fling_lavalamp_color_to">Lavalampe udgangsfarve</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Batteristil</string>
     <string name="status_bar_battery_style_icon_portrait">Ikon, stående</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikon, liggende</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_dotted_circle">Stiplet cirkel</string>
-    <string name="status_bar_battery_style_square">Firkant</string>
-    <string name="status_bar_battery_style_solid">Optrukken</string>
+    <string name="status_bar_battery_style_filled_circle">Filled circle</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Skjult</string>
     <string name="status_bar_battery_style_tile_title">Tilsidesætte batteriflise</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Batteriprocent</string>
     <string name="status_bar_battery_percentage_default">Skjult</string>
     <string name="status_bar_battery_percentage_text_inside">Inde i ikonet</string>
-    <string name="status_bar_battery_percentage_text_next">Ved siden af ikonet</string>
+    <string name="status_bar_battery_percentage_text_next_right">Next to the icon (right)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Next to the icon (left)</string>
     <string name="status_bar_battery_text_position_title">Battery percent position</string>
     <string name="status_bar_battery_text_position_left">Left of the icon</string>
     <string name="status_bar_battery_text_position_right">Right of the icon</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Omgivelsesbetinget visning</string>
     <string name="doze_display_summary">Opsæt omgivelsesbetinget visning</string>
     <string name="doze_sensor_title">Sensor based</string>
+    <string name="raise_to_wake_title">Wake up</string>
+    <string name="raise_to_wake_summary">Wake up the device instead of pulsing notifications</string>
     <string name="tilt_title">Hældning</string>
     <string name="tilt_summary">Pulsér notifikationer ved hældning</string>
     <string name="pickup_title">Opkaldsbesvarelse</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Del crDroid</string>
     <string name="share_crdroid_summary">Fortæl andre om crDroid</string>
+    <string name="share_message">Check out what #crDroid Android is all about @ https://crdroid.net/</string>
     <string name="share_chooser_title">Del crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Opladningslyde</string>
     <string name="charging_sounds_settings_summary">Tilpas afspillede lyde ved til- eller frakobling af en strømkilde</string>
-    <string name="charging_sounds_enabled_title">Aktivér</string>
+    <string name="charging_sounds_enabled_title">Battery charging sound</string>
     <string name="charging_sounds_enabled_summary">Afspil en lyd, når du tilslutter eller frakobler en strømkilde</string>
     <string name="power_notifications_vibrate_title">Vibrér</string>
-    <string name="charging_sounds_ringtone_title">Notifikationslyd</string>
     <string name="charging_sounds_ringtone_silent">Lydløs</string>
+    <string name="wired_charging_sounds_title">Wired charging</string>
+    <string name="wireless_charging_sounds_title">Wireless charging</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Wakelock-blokering</string>
     <string name="wakelock_blocker_summary">Blokér system-wakelocks</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Medium</string>
     <string name="rounded_high">High</string>
     <string name="rounded_extreme">Extreme</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Signal bar style</string>
+    <string name="signal_style_summary">Set custom signal icon style</string>
+    <string name="wifi_style_title">WiFi bar style</string>
+    <string name="wifi_style_summary">Set custom wifi icon style</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Nulstil statistik</string>
     <string name="battery_stats_message">Dette nulstiller batterihistorikken. Fortsæt?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Aktivér dobbelttryk for at sove</string>
     <string name="full_gesture_mode_dt2s_summary">Tryk på et tomt navbjælkeområde, men ikke Hjem-knappen, for at slukke skærmen.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">VPN-advarsel</string>
-    <string name="qs_footer_warnings_summary">Vis en alam når netværket er overvåget eller forbundet via VPN</string>
+    <string name="qs_footer_warnings_title">Footer alerts</string>
+    <string name="qs_footer_warnings_summary">Display an alert at bottom of QS panel when network is monitored by external apps or VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Brugerkontoikon</string>
     <string name="qs_footer_users_icon_summary">Vis flerbrugertilgængelighedsikon, når tilgængeligt</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Skjult</string>
     <string name="stock_statusbar_in_hide">Standard statusbjælkehøjde</string>
     <string name="stock_statusbar_in_hide_summary">Benyt stanfard statusbjælkehøjde i Skjult</string>
+    <string name="display_kill_notch_title">Kill notch</string>
+    <string name="display_kill_notch_summary">Kill notch completely for full screen apps</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Restrict apps from running the background</string>
     <string name="aggressive_battery_saver_title">Auto-enable on battery saver</string>
     <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Battery percentage</string>
-    <string name="battery_percentage_off">Disabled</string>
-    <string name="battery_percentage_next">Enabled</string>
-    <string name="battery_percentage_inside">Enabled (inside icon)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Battery estimate</string>
     <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -348,8 +348,8 @@
     <string name="double_tap_sleep_anywhere_title">Doppeltippen zum Bildschirm sperren</string>
     <string name="double_tap_sleep_anywhere_summary">Irgendwo auf dem Sperrbildschirm doppeltippen, um das Gerät zu sperren</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Power-Menü</string>
-    <string name="lockscreen_enable_power_menu_summary">Power-Menüzugriff auf gesichertem Sperrbildschirm erlauben</string>
+    <string name="lockscreen_enable_power_menu_title">Ein-/Aus-Menü</string>
+    <string name="lockscreen_enable_power_menu_summary">Zugriff auf Ein-/Aus-Menü vom gesperrten Sperrbildschirm aus erlauben</string>
     <string name="lockscreen_secure_power_menu_title">Sicheres Power-Menü</string>
     <string name="lockscreen_secure_power_menu_summary">Power-Menü-Aktion erst nach Authentifizierung zulassen</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Geschwindigkeit des Lavalampeneffekts</string>
     <string name="pulse_solid_units_count">Anzahl durchgezogener Balken</string>
     <string name="pulse_solid_units_opacity">Deckkraft durchgezogener Balken</string>
+    <string name="pulse_solid_units_rounded_title">Abgerundete Ecken</string>
+    <string name="pulse_solid_units_rounded_summary">Durchgezogene Linien mit abgerundeter Spitze</string>
     <string name="pulse_solid_dimen_category">Einstellungen für durchgezogene Balken</string>
     <string name="fling_lavalamp_color_from">Lavalampe Startfarbe</string>
     <string name="fling_lavalamp_color_to">Lavalampe Endfarbe</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Akku-Stil</string>
     <string name="status_bar_battery_style_icon_portrait">Symbol (Hochformat)</string>
-    <string name="status_bar_battery_style_icon_landscape">Symbol (Querformat)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Querformat-Symbol (rechts)</string>
+    <string name="status_bar_battery_style_icon_landscape">Querformat-Symbol (links)</string>
     <string name="status_bar_battery_style_circle">Kreis</string>
     <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
-    <string name="status_bar_battery_style_square">Quadrat</string>
-    <string name="status_bar_battery_style_solid">Ausgefüllter Kreis</string>
+    <string name="status_bar_battery_style_filled_circle">Gefüllter Kreis</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
     <string name="status_bar_battery_style_tile_title">Akku-Kachel überschreiben</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Akku-Prozentsatz</string>
     <string name="status_bar_battery_percentage_default">Ausgeblendet</string>
     <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
-    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    <string name="status_bar_battery_percentage_text_next_right">Neben dem Symbol (rechts)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Neben dem Symbol (links)</string>
     <string name="status_bar_battery_text_position_title">Akku-Prozentposition</string>
     <string name="status_bar_battery_text_position_left">Links vom Symbol</string>
     <string name="status_bar_battery_text_position_right">Rechts vom Symbol</string>
@@ -817,9 +820,9 @@
     <!-- Power notification controls -->
     <string name="power_notification_title">Ein/Aus-Benachrichtigungsregler</string>
     <string name="power_notification_summary">Erweiterte Benachrichtigungsregler und Informationen</string>
-    <string name="sound_dnd_category">Bitte nicht stören</string>
+    <string name="sound_dnd_category">DND</string>
     <!-- Volume down enter do not disturb -->
-    <string name="volbtn_down_zen_title">Lautstärke runter</string>
+    <string name="volbtn_down_zen_title">Lautstärke verringern</string>
     <string name="volbtn_down_zen_summary"> Lautstärke verringern erlauben, um in den DND-Modus zu gelangen</string>
     <!-- Volume up exit do not disturb -->
     <string name="volbtn_up_zen_title">Lautstärke erhöhen</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Ambient Display</string>
     <string name="doze_display_summary">Einstellungen für Ambient Display konfigurieren</string>
     <string name="doze_sensor_title">Sensorbasiert</string>
+    <string name="raise_to_wake_title">Gerät aufwecken</string>
+    <string name="raise_to_wake_summary">Gerät aufwecken statt Benachrichtigungen kurz anzuzeigen</string>
     <string name="tilt_title">Neigen</string>
     <string name="tilt_summary">Pulsbenachrichtigungen beim Neigen</string>
     <string name="pickup_title">Anheben</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Teile crDroid</string>
     <string name="share_crdroid_summary">Andere über crDroid informieren</string>
+    <string name="share_message">Finde heraus, was es mit #crDroid Android auf sich hat @ https://crdroid.net/</string>
     <string name="share_chooser_title">crDroid teilen</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Ton beim Aufladen</string>
     <string name="charging_sounds_settings_summary">Beim Anschließen oder Trennen einer Stromquelle einen Ton abspielen</string>
-    <string name="charging_sounds_enabled_title">Aktivieren</string>
+    <string name="charging_sounds_enabled_title">Ladegerät-Ton</string>
     <string name="charging_sounds_enabled_summary">Beim Anschließen oder Trennen einer Stromquelle einen Ton abspielen</string>
     <string name="power_notifications_vibrate_title">Vibrieren</string>
-    <string name="charging_sounds_ringtone_title">Benachrichtigungston</string>
     <string name="charging_sounds_ringtone_silent">Lautlos</string>
+    <string name="wired_charging_sounds_title">Kabelgebundenes Laden</string>
+    <string name="wireless_charging_sounds_title">Kabelloses Laden</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Wakelock-Blocker</string>
     <string name="wakelock_blocker_summary">System-Wakelocks blockieren</string>
@@ -1464,7 +1471,7 @@
     <string name="roaming_indicator_icon_title">Roaming-Anzeige</string>
     <string name="roaming_indicator_icon_summary">Im Roaming-Modus die Anzeige im Signalsymbol einblenden</string>
     <!-- In-call DND -->
-    <string name="dnd_when_call_title">\"Nicht stören\" während des Anrufs</string>
+    <string name="dnd_when_call_title">DND während des Anrufs</string>
     <string name="dnd_when_call_summary">DND während Anrufen automatisch aktivieren</string>
     <!-- Bluetooth status -->
     <string name="bluetooth_battery_title">Bluetooth-Akkustatus</string>
@@ -1676,7 +1683,7 @@
     <string name="advanced_reboot_secured_summary">Erweiterte Neustart-Optionen auf gesichertem Sperrbildschirm anzeigen</string>
     <!-- Allow lights in zen mode -->
     <string name="zen_allow_lights">Aktivieren</string>
-    <string name="zen_allow_lights_summary">Benachrichtigungs-LED während \"Nicht stören\"-Modus erlauben</string>
+    <string name="zen_allow_lights_summary">Pulsierende LED erlauben, wenn DND aktiv ist</string>
     <string name="light_brightness_category">Helligkeitseinstellungen</string>
     <!-- Ambient Ticker -->
     <string name="pulse_on_new_tracks_title">Musikticker</string>
@@ -1766,7 +1773,7 @@
     <!-- Common light settings strings -->
     <string name="light_brightness_title">Helligkeitsstufen</string>
     <string name="light_brightness_normal">Normal</string>
-    <string name="light_brightness_zen">Nicht Stören</string>
+    <string name="light_brightness_zen">DND</string>
     <!-- Battery light settings -->
     <string name="battery_light_title">Akku-LED</string>
     <string name="battery_light_summary">Konfigurieren der LED-Farben basierend des Akkustandes</string>
@@ -1778,7 +1785,7 @@
     <string name="battery_light_full_color_title">Fast vollständig geladen (&gt;90 %)</string>
     <string name="battery_light_really_full_color_title">Voll aufgeladen (100 %)</string>
     <!-- Lights settings screen, notification light settings -->
-    <string name="notification_light_title">Benachrichtigungslicht</string>
+    <string name="notification_light_title">Benachrichtigungs-LED</string>
     <string name="notification_light_summary">LED-Farbe für Benachrichtigungen konfigurieren</string>
     <string name="notification_light_general_title">Allgemein</string>
     <string name="notification_light_advanced_title">Erweitert</string>
@@ -1788,8 +1795,8 @@
     <string name="notification_light_default_value">Standard</string>
     <string name="notification_light_missed_call_title">Verpasste Anrufe</string>
     <string name="notification_light_voicemail_title">Mailbox</string>
-    <string name="notification_light_screen_on">LED-Anzeige bei aktivem Bildschirm</string>
-    <string name="notification_light_zen_mode">LED-Anzeige im \"Nicht stören\"-Modus</string>
+    <string name="notification_light_screen_on">Leuchtet bei Bildschirm an</string>
+    <string name="notification_light_zen_mode">LED-Anzeige im DND-Modus</string>
     <string name="keywords_lights_brightness_level">LED-Helligkeit dimmen</string>
     <string name="notification_light_automagic">Farben automatisch wählen</string>
     <string name="notification_light_automagic_summary">Farben automatisch wählen</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Mittleres</string>
     <string name="rounded_high">Hoch</string>
     <string name="rounded_extreme">Extrem</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Stil des Mobilfunk-Empfangssymbols</string>
+    <string name="signal_style_summary">Stil des Mobilfunk-Empfangssymbols festlegen</string>
+    <string name="wifi_style_title">Stil des WLAN-Empfangssymbols</string>
+    <string name="wifi_style_summary">Stil des WLAN-Empfangssymbols festlegen</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Statistiken zurücksetzen</string>
     <string name="battery_stats_message">Dies wird die Akkustatistiken zurücksetzen. Möchten Sie fortfahren?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Doppeltippen zum Sperren aktivieren</string>
     <string name="full_gesture_mode_dt2s_summary">Tippe auf eine leere Stelle in der Navigationsleiste, aber nicht auf die Home-Taste, um den Bildschirm auszuschalten.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">VPN-Warnung</string>
-    <string name="qs_footer_warnings_summary">Benachrichtigung anzeigen, wenn das Netzwerk über VPN überwacht oder verbunden wird</string>
+    <string name="qs_footer_warnings_title">Warnungen in Fußzeile</string>
+    <string name="qs_footer_warnings_summary">Warnung am unteren Rand des QS-Panel anzeigen, wenn das Netzwerk durch externe App oder VPN überwacht wird</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Benutzerkontosymbol</string>
     <string name="qs_footer_users_icon_summary">Symbol für Mehrbenutzerzugriff anzeigen, falls verfügbar</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Ausblenden</string>
     <string name="stock_statusbar_in_hide">Standard Statusleisten-Höhe</string>
     <string name="stock_statusbar_in_hide_summary">Nutze die Standard Statusbar Größe beim \"Verstecken\"</string>
+    <string name="display_kill_notch_title">Vollständiges Ausschalten der Notch</string>
+    <string name="display_kill_notch_summary">Vollständiges Ausschalten der Notch bei Vollbildanwendungen</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Vollbild-Apps</string>
     <string name="display_cutout_force_fullscreen_summary">Erzwinge Apps, um notch Leerzeichen zu ignorieren</string>
@@ -2138,7 +2152,7 @@
     <string name="gaming_mode_ringer_title">Rufton im Spielmodus</string>
     <string name="gaming_mode_ringer_off_title">Nicht ändern</string>
     <string name="gaming_mode_ringer_vibrate_title">Vibrieren</string>
-    <string name="gaming_mode_ringer_dnd_title">Nicht Stören</string>
+    <string name="gaming_mode_ringer_dnd_title">DND</string>
     <string name="gaming_mode_ringer_silent_title">Lautlos</string>
     <string name="gaming_mode_notifications_title">Spielmodus-Anzeige</string>
     <string name="gaming_mode_notifications_off_title">Deaktiviert</string>
@@ -2163,17 +2177,12 @@
     <string name="aggressive_standby_summary">Einschränkung der Ausführung von Apps im Hintergrund</string>
     <string name="aggressive_battery_saver_title">Automatische Aktivierung im Energiesparmodus</string>
     <string name="aggressive_battery_saver_summary">Im Energiesparmodus wird aggressives Energiesparen automatisch eingeschaltet</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Akku-Prozentsatz</string>
-    <string name="battery_percentage_off">Deaktiviert</string>
-    <string name="battery_percentage_next">Aktiviert</string>
-    <string name="battery_percentage_inside">Aktiviert (innerhalb Symbol)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Akku-Schätzung</string>
     <string name="battery_estimate_summary">Geschätzte verbleibende Akku-Laufzeit anzeigen, wenn verfügbar</string>
     <!-- Refresh rate -->
     <string name="default_refresh_rate_title">Standard Aktualisierungsrate</string>
-    <string name="peak_refresh_rate_title_custom">Maximale Bildwiederholrate</string>
+    <string name="peak_refresh_rate_title_custom">Spitzenwert der Aktualisierungsrate</string>
     <string name="battery_saver_refresh_rate_title">Bildwiederholrate begrenzen</string>
     <string name="battery_saver_refresh_rate_summary">60Hz als maximale Aktualisierungsrate verwenden, um Energie im Energiesparmodus zu sparen</string>
     <!-- Ambient edge lighting -->

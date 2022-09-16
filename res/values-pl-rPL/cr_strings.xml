@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
     <string name="crdroid_settings_title">Ustawienia crDroid</string>
-    <string name="crdroid_settings_summary">Otwarta dobroć</string>
+    <string name="crdroid_settings_summary">Spersonalizuj swój system</string>
     <string name="crdroid_personalization_category">Personalizacja</string>
     <string name="crdroid_addons_category">Dodatki</string>
     <!-- Personalization Categories -->
@@ -348,8 +348,8 @@
     <string name="double_tap_sleep_anywhere_title">Dotknij, by uśpić</string>
     <string name="double_tap_sleep_anywhere_summary">Dwukrotnie stuknij w dowolnym miejscu ekranu blokady, by uśpić urządzenie</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Opcje zasilania</string>
-    <string name="lockscreen_enable_power_menu_summary">Zezwól na dostęp do menu zasilania z poziomu zabezpieczonego ekranu blokady</string>
+    <string name="lockscreen_enable_power_menu_title">Menu zasilania</string>
+    <string name="lockscreen_enable_power_menu_summary">Zezwól na dostęp do menu zasilania na bezpiecznym ekranie blokady</string>
     <string name="lockscreen_secure_power_menu_title">Bezpieczne menu zasilania</string>
     <string name="lockscreen_secure_power_menu_summary">Zezwalaj na dostęp do menu zasilania jedynie po uwierzytelnieniu</string>
     <!-- Quick settings on secure lockscreen -->
@@ -388,7 +388,7 @@
     <string name="headset_connect_player_both_no_carkit">Gdy jest podłączony przewodowy zestaw słuchawkowy lub zestaw słuchawkowy BT (nie zestaw głośnomówiący)</string>
     <string name="headset_connect_player_both">Gdy jest podłączony przewodowy zestaw słuchawkowy lub zestaw słuchawkowy BT</string>
     <!-- Quick setting categories -->
-    <string name="qs_tiles_category">Płytki</string>
+    <string name="qs_tiles_category">Kafelki</string>
     <string name="qs_toggles_category">Przełączniki</string>
     <string name="qs_misc_category">Pozostałe</string>
     <string name="qs_footer_category">Stopka</string>
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Prędkość lampy lawowej</string>
     <string name="pulse_solid_units_count">Liczba stałych linii</string>
     <string name="pulse_solid_units_opacity">Przezroczystość stałych linii</string>
+    <string name="pulse_solid_units_rounded_title">Zaokrąglone narożniki</string>
+    <string name="pulse_solid_units_rounded_summary">Linie stałe z zaokrągloną końcówkami</string>
     <string name="pulse_solid_dimen_category">Ustawienia trybu solidnych linii</string>
     <string name="fling_lavalamp_color_from">Kolor początkowy lampy z lawą</string>
     <string name="fling_lavalamp_color_to">Kolor końcowy lampy z lawą</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Styl paska baterii</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona pionowa</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikona pozioma</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Ikona pozioma (Prawo)</string>
+    <string name="status_bar_battery_style_icon_landscape">Ikona pozioma (Lewo)</string>
     <string name="status_bar_battery_style_circle">Okrąg</string>
     <string name="status_bar_battery_style_dotted_circle">Kropkowany okrąg</string>
-    <string name="status_bar_battery_style_square">Kwadrat</string>
-    <string name="status_bar_battery_style_solid">Stały</string>
+    <string name="status_bar_battery_style_filled_circle">Wypełniony okrąg</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Ukryty</string>
     <string name="status_bar_battery_style_tile_title">Zastąp przełącznik baterii</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Procent baterii</string>
     <string name="status_bar_battery_percentage_default">Ukryty</string>
     <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
-    <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
+    <string name="status_bar_battery_percentage_text_next_right">Obok ikony (po prawej)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Obok ikony (po lewej)</string>
     <string name="status_bar_battery_text_position_title">Pozycja procentów baterii</string>
     <string name="status_bar_battery_text_position_left">Na lewo od ikony</string>
     <string name="status_bar_battery_text_position_right">Na prawo od ikony</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Ekran w tle</string>
     <string name="doze_display_summary">Konfigurowanie ustawień dla otoczenia wyświetlacza</string>
     <string name="doze_sensor_title">Oparte na czujniku</string>
+    <string name="raise_to_wake_title">Wybudzanie</string>
+    <string name="raise_to_wake_summary">Wybudzanie urządzenia zamiast pulsującego powiadomienia</string>
     <string name="tilt_title">Przechylenie</string>
     <string name="tilt_summary">Pulsujące powiadomienia podczas podnoszenia</string>
     <string name="pickup_title">Podnieś</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Udostępnij crDroid</string>
     <string name="share_crdroid_summary">Powiadom innych o crDroid</string>
+    <string name="share_message">Dowiedz się więcej o #crDroid</string>
     <string name="share_chooser_title">Udostępnij crDroid</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Dźwięki łądowania</string>
     <string name="charging_sounds_settings_summary">Dostosowanie odtwarzanego dźwięku kiedy podłącza się lub odłącza źródło zasilania</string>
-    <string name="charging_sounds_enabled_title">Włącz</string>
+    <string name="charging_sounds_enabled_title">Dźwięk ładowania baterii</string>
     <string name="charging_sounds_enabled_summary">Odtwarzaj dźwięk podczas podłączania lub odłączania źródła zasilania</string>
     <string name="power_notifications_vibrate_title">Wibracje</string>
-    <string name="charging_sounds_ringtone_title">Dźwięk powiadomienia</string>
     <string name="charging_sounds_ringtone_silent">Tryb cichy</string>
+    <string name="wired_charging_sounds_title">Ładowanie przewodowe</string>
+    <string name="wireless_charging_sounds_title">Ładowanie bezprzewodowe</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Blokada wybudzeń</string>
     <string name="wakelock_blocker_summary">Blokuj wybudzenia systemu</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Średnie</string>
     <string name="rounded_high">Mocne</string>
     <string name="rounded_extreme">Ekstremalne</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Styl wskaźnika zasięgu</string>
+    <string name="signal_style_summary">Ustaw niestandardowy wygląd ikony sygnału</string>
+    <string name="wifi_style_title">Styl paska WiFi</string>
+    <string name="wifi_style_summary">Ustaw niestandardowy wygląd ikony wifi</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Zresetuj statystyki</string>
     <string name="battery_stats_message">Spowoduje to wyzerowanie statystyk użycia baterii. Czy chcesz kontynuować?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Włącz usypianie dwuklikiem</string>
     <string name="full_gesture_mode_dt2s_summary">Dotknij pustego miejsca na pasku nawigacji (nie w przycisk ekranu głównego) aby zablokować urządzenie.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">Alert VPN</string>
-    <string name="qs_footer_warnings_summary">Wyświetlaj komunikat jeśli sieć jest monitorowana lub połączona za pomocą VPN</string>
+    <string name="qs_footer_warnings_title">Alerty stopki</string>
+    <string name="qs_footer_warnings_summary">Wyświetlaj ostrzeżenie na dole panelu QS, gdy sieć jest monitorowana przez zewnętrzne aplikacje lub VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">Ikona konta użytkownika</string>
     <string name="qs_footer_users_icon_summary">Wyświetlaj dostępność wieloużytkownikową jeśli dostępna</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Ukryj</string>
     <string name="stock_statusbar_in_hide">Domyślna wysokość paska statusu</string>
     <string name="stock_statusbar_in_hide_summary">Użyj domyślnej wysokości paska statusu w trybie ukrytym</string>
+    <string name="display_kill_notch_title">Ignoruj wcięcie na ekranie</string>
+    <string name="display_kill_notch_summary">Całkowicie ignoruj wcięcie na ekranie w aplikacjach pełnoekranowych</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikacje pełnoekranowe</string>
     <string name="display_cutout_force_fullscreen_summary">Wymuś na aplikacjach ignorowanie przestrzeni wycięcia</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Ogranicz działanie aplikacji w tle</string>
     <string name="aggressive_battery_saver_title">Automatycznie włączaj podczas oszczędzania baterii</string>
     <string name="aggressive_battery_saver_summary">Włącz Agresywną baterię automatycznie w trybie oszczędzania energii</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Procent baterii</string>
-    <string name="battery_percentage_off">Wyłączony</string>
-    <string name="battery_percentage_next">Włączono</string>
-    <string name="battery_percentage_inside">Włączone (wewnętrzna ikona)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Szacunkowy czas pracy baterii</string>
     <string name="battery_estimate_summary">Wyświetl szacowany pozostały okres użytkowania baterii, gdy jest dostępny</string>

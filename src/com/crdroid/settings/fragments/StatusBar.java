@@ -35,6 +35,7 @@ import androidx.preference.SwitchPreference;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.crdroid.settings.preferences.SystemSettingListPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
@@ -58,6 +59,8 @@ public class StatusBar extends SettingsPreferenceFragment implements
     public static final String TAG = "StatusBar";
 
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
+    private static final String QUICK_PULLDOWN = "qs_quick_pulldown";
+    private static final String SMART_PULLDOWN = "qs_smart_pulldown";
     private static final String KEY_VOLTE_ICON_STYLE = "volte_icon_style";
     private static final String KEY_VOWIFI_ICON_STYLE = "vowifi_icon_style";
     private static final String KEY_VOLTE_VOWIFI_OVERRIDE = "volte_vowifi_override";
@@ -65,8 +68,24 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String KEY_SHOW_FOURG = "show_fourg_icon";
     private static final String KEY_SHOW_DATA_DISABLED = "data_disabled_icon";
     private static final String KEY_USE_OLD_MOBILETYPE = "use_old_mobiletype";
+    private static final String KEY_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
+    private static final String KEY_STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
+
+    private static final int PULLDOWN_DIR_NONE = 0;
+    private static final int PULLDOWN_DIR_RIGHT = 1;
+    private static final int PULLDOWN_DIR_LEFT = 2;
+    private static final int PULLDOWN_DIR_ALWAYS = 3;
+
+    private static final int BATTERY_STYLE_PORTRAIT = 0;
+    private static final int BATTERY_STYLE_TEXT = 4;
+    private static final int BATTERY_STYLE_HIDDEN = 5;
 
     private LineageSystemSettingListPreference mStatusBarClock;
+    private LineageSystemSettingListPreference mQuickPulldown;
+    private SystemSettingListPreference mBatteryPercent;
+    private SystemSettingListPreference mBatteryStyle;
+    private SystemSettingListPreference mSmartPulldown;
     private SystemSettingSeekBarPreference mVolteIconStyle;
     private SystemSettingSeekBarPreference mVowifiIconStyle;
     private SwitchPreference mOverride;
@@ -74,6 +93,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private SwitchPreference mShowFourg;
     private SwitchPreference mDataDisabled;
     private SwitchPreference mOldMobileType;
+    private SwitchPreference mBatteryTextCharging;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -127,10 +147,67 @@ public class StatusBar extends SettingsPreferenceFragment implements
                     mConfigUseOldMobileType ? 1 : 0, UserHandle.USER_CURRENT) != 0;
             mOldMobileType.setChecked(showing);
         }
+
+        int batterystyle = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
+        int batterypercent = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
+
+        mBatteryStyle = (SystemSettingListPreference) findPreference(KEY_STATUS_BAR_BATTERY_STYLE);
+        mBatteryStyle.setOnPreferenceChangeListener(this);
+
+        mBatteryPercent = (SystemSettingListPreference) findPreference(KEY_STATUS_BAR_SHOW_BATTERY_PERCENT);
+        mBatteryPercent.setEnabled(
+                batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
+        mBatteryPercent.setOnPreferenceChangeListener(this);
+
+        mBatteryTextCharging = (SwitchPreference) findPreference(KEY_STATUS_BAR_BATTERY_TEXT_CHARGING);
+        mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
+                (batterystyle != BATTERY_STYLE_TEXT && batterypercent != 2));
+
+        mQuickPulldown =
+                (LineageSystemSettingListPreference) findPreference(QUICK_PULLDOWN);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+
+        mSmartPulldown = (SystemSettingListPreference) findPreference(SMART_PULLDOWN);
+        mSmartPulldown.setOnPreferenceChangeListener(this);
+        updateSmartPulldownSummary(mSmartPulldown.getIntValue(0));
+
+        // Adjust status bar preferences for RTL
+        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
+            mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mBatteryStyle) {
+            int value = Integer.parseInt((String) newValue);
+            int batterypercent = Settings.System.getIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
+            mBatteryPercent.setEnabled(
+                    value != BATTERY_STYLE_TEXT && value != BATTERY_STYLE_HIDDEN);
+            mBatteryTextCharging.setEnabled(value == BATTERY_STYLE_HIDDEN ||
+                    (value != BATTERY_STYLE_TEXT && batterypercent != 2));
+            return true;
+        } else if (preference == mBatteryPercent) {
+            int value = Integer.parseInt((String) newValue);
+            int batterystyle = Settings.System.getIntForUser(getContentResolver(),
+                    Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
+            mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
+                    (batterystyle != BATTERY_STYLE_TEXT && value != 2));
+            return true;
+        } else if (preference == mQuickPulldown) {
+            int value = Integer.parseInt((String) newValue);
+            updateQuickPulldownSummary(value);
+            return true;
+        } else if (preference == mSmartPulldown) {
+            int value = Integer.parseInt((String) newValue);
+            updateSmartPulldownSummary(value);
+            return true;
+        }
         return false;
     }
 
@@ -175,6 +252,45 @@ public class StatusBar extends SettingsPreferenceFragment implements
         BatteryBar.reset(mContext);
         Clock.reset(mContext);
         NetworkTrafficSettings.reset(mContext);
+    }
+
+    private void updateQuickPulldownSummary(int value) {
+        String summary="";
+        switch (value) {
+            case PULLDOWN_DIR_NONE:
+                summary = getResources().getString(
+                    R.string.status_bar_quick_qs_pulldown_off);
+                break;
+            case PULLDOWN_DIR_ALWAYS:
+                summary = getResources().getString(
+                    R.string.status_bar_quick_qs_pulldown_always);
+                break;
+            case PULLDOWN_DIR_LEFT:
+            case PULLDOWN_DIR_RIGHT:
+                summary = getResources().getString(
+                    R.string.status_bar_quick_qs_pulldown_summary,
+                    getResources().getString(value == PULLDOWN_DIR_LEFT
+                        ? R.string.status_bar_quick_qs_pulldown_summary_left
+                        : R.string.status_bar_quick_qs_pulldown_summary_right));
+                break;
+        }
+        mQuickPulldown.setSummary(summary);
+    }
+
+    private void updateSmartPulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // Smart pulldown deactivated
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_off));
+        } else if (value == 3) {
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_none_summary));
+        } else {
+            String type = res.getString(value == 1
+                    ? R.string.smart_pulldown_dismissable
+                    : R.string.smart_pulldown_ongoing);
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
+        }
     }
 
     @Override

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2021 crDroid Android Project
+ * Copyright (C) 2016-2022 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -48,6 +48,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     final static String TAG = "PowerMenuActions";
 
     private SwitchPreference mScreenshotPref;
+    private SwitchPreference mOnTheGoPref;
     private SwitchPreference mAirplanePref;
     private SwitchPreference mUsersPref;
     private SwitchPreference mLockDownPref;
@@ -58,7 +59,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     Context mContext;
     private LockPatternUtils mLockPatternUtils;
     private UserManager mUserManager;
-    private List<String> mLocalUserConfig = new ArrayList<String>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -73,6 +73,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         for (String action : PowerMenuConstants.getAllActions()) {
             if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
+            } else if (action.equals(GLOBAL_ACTION_KEY_ONTHEGO)) {
+                mOnTheGoPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_ONTHEGO);    
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
             } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
@@ -83,8 +85,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mEmergencyPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
             }
         }
-
-        mLocalUserConfig = mLineageGlobalActions.getLocalUserConfig();
     }
 
     @Override
@@ -96,22 +96,14 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                     GLOBAL_ACTION_KEY_SCREENSHOT));
         }
 
+        if (mOnTheGoPref != null) {
+            mOnTheGoPref.setChecked(mLineageGlobalActions.userConfigContains(
+                    GLOBAL_ACTION_KEY_ONTHEGO));
+        }
+
         if (mAirplanePref != null) {
             mAirplanePref.setChecked(mLineageGlobalActions.userConfigContains(
                     GLOBAL_ACTION_KEY_AIRPLANE));
-        }
-
-        if (mUsersPref != null) {
-            if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
-                getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
-                mUsersPref = null;
-            } else {
-                List<UserInfo> users = mUserManager.getUsers();
-                boolean enabled = (users.size() > 1);
-                mUsersPref.setChecked(mLineageGlobalActions.userConfigContains(
-                        GLOBAL_ACTION_KEY_USERS) && enabled);
-                mUsersPref.setEnabled(enabled);
-            }
         }
 
         if (mEmergencyPref != null) {
@@ -135,6 +127,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         if (preference == mScreenshotPref) {
             value = mScreenshotPref.isChecked();
             mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
+
+        } else if (preference == mOnTheGoPref) {
+            value = mOnTheGoPref.isChecked();
+            mLineageGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_ONTHEGO);
 
         } else if (preference == mAirplanePref) {
             value = mAirplanePref.isChecked();
@@ -173,6 +169,18 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             } else {
                 mLockDownPref.setChecked(false);
                 mLockDownPref.setSummary(R.string.power_menu_lockdown_unavailable);
+            }
+        }
+        if (mUsersPref != null) {
+            if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
+                getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
+                mUsersPref = null;
+            } else {
+                List<UserInfo> users = mUserManager.getUsers();
+                boolean enabled = (users.size() > 1);
+                mUsersPref.setChecked(mLineageGlobalActions.userConfigContains(
+                        GLOBAL_ACTION_KEY_USERS) && enabled);
+                mUsersPref.setEnabled(enabled);
             }
         }
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2016-2021 crDroid Android Project
+     Copyright (C) 2016-2022 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -348,8 +348,8 @@
     <string name="double_tap_sleep_anywhere_title">Ekranı söndürmək üçün toxun</string>
     <string name="double_tap_sleep_anywhere_summary">Kilid ekranında ekranı söndürmək üçün hərhansı bir yerə iki dəfə toxunun</string>
     <!-- Power menu on secure lockscreen -->
-    <string name="lockscreen_enable_power_menu_title">Güc menyusu</string>
-    <string name="lockscreen_enable_power_menu_summary">Güvənli kilid ekranında güc menyusuna icazə verin</string>
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
     <string name="lockscreen_secure_power_menu_title">Güvənli güc menyusu</string>
     <string name="lockscreen_secure_power_menu_summary">Güc menyusunun fəaliyyətinə yalnızca identifikasiyadan sonra icazə verin</string>
     <!-- Quick settings on secure lockscreen -->
@@ -653,6 +653,8 @@
     <string name="pulse_lavalamp_speed_title">Lava lampa sürəti</string>
     <string name="pulse_solid_units_count">Düz xətt sayı</string>
     <string name="pulse_solid_units_opacity">Düz xətt şəffaflığı</string>
+    <string name="pulse_solid_units_rounded_title">Rounded corners</string>
+    <string name="pulse_solid_units_rounded_summary">Solid lines with rounded tip</string>
     <string name="pulse_solid_dimen_category">Düz xətt rejimi ayarları</string>
     <string name="fling_lavalamp_color_from">Lava Lamp başlama rəngi</string>
     <string name="fling_lavalamp_color_to">Lava Lamp bitmə rəngi</string>
@@ -786,11 +788,11 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Batareya stili</string>
     <string name="status_bar_battery_style_icon_portrait">Şaquli ikon</string>
-    <string name="status_bar_battery_style_icon_landscape">Üfüqi ikon</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
     <string name="status_bar_battery_style_circle">Dairə</string>
     <string name="status_bar_battery_style_dotted_circle">Nöqtəli dairə</string>
-    <string name="status_bar_battery_style_square">Kvadrat</string>
-    <string name="status_bar_battery_style_solid">Dolu</string>
+    <string name="status_bar_battery_style_filled_circle">Filled circle</string>
     <string name="status_bar_battery_style_text">Mətn</string>
     <string name="status_bar_battery_style_hidden">Gizli</string>
     <string name="status_bar_battery_style_tile_title">Batareya çərçivəsini zorla</string>
@@ -805,7 +807,8 @@
     <string name="status_bar_battery_percentage_title">Batareya faizi</string>
     <string name="status_bar_battery_percentage_default">Gizli</string>
     <string name="status_bar_battery_percentage_text_inside">İkon içində</string>
-    <string name="status_bar_battery_percentage_text_next">İkonun yanında</string>
+    <string name="status_bar_battery_percentage_text_next_right">Next to the icon (right)</string>
+    <string name="status_bar_battery_percentage_text_next_left">Next to the icon (left)</string>
     <string name="status_bar_battery_text_position_title">Batareya faizinin yeri</string>
     <string name="status_bar_battery_text_position_left">İkonun solunda</string>
     <string name="status_bar_battery_text_position_right">İkonun sağında</string>
@@ -1017,6 +1020,8 @@
     <string name="doze_display_title">Ətraf mühit displeyi</string>
     <string name="doze_display_summary">Ətraf mühit displeyi tənzimləmələrini özəlləşdir</string>
     <string name="doze_sensor_title">Sensora bağlı</string>
+    <string name="raise_to_wake_title">Wake up</string>
+    <string name="raise_to_wake_summary">Wake up the device instead of pulsing notifications</string>
     <string name="tilt_title">Tilt</string>
     <string name="tilt_summary">Tilt sensoru ile Pulse bildirişləri</string>
     <string name="pickup_title">Qaldır</string>
@@ -1036,6 +1041,7 @@
     <!-- Share crDroid -->
     <string name="share_crdroid_title">crDroid\'i paylaş</string>
     <string name="share_crdroid_summary">crDroid haqqında başqalarının görüşlərini öyrənin</string>
+    <string name="share_message">Check out what #crDroid Android is all about @ https://crdroid.net/</string>
     <string name="share_chooser_title">crDroid\'i paylaş</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
@@ -1336,11 +1342,12 @@
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Enerji doldurma səsləri</string>
     <string name="charging_sounds_settings_summary">Cərəyan mənbəyinə taxarkən və ya çıxararkən olan səsi dəyişdir</string>
-    <string name="charging_sounds_enabled_title">Aktiv</string>
+    <string name="charging_sounds_enabled_title">Battery charging sound</string>
     <string name="charging_sounds_enabled_summary">Cərəyan mənbəyinə taxarkən və ya çıxararkən bir səs oynat</string>
     <string name="power_notifications_vibrate_title">Vibrasiya</string>
-    <string name="charging_sounds_ringtone_title">Bildiriş səsi</string>
     <string name="charging_sounds_ringtone_silent">Səssiz</string>
+    <string name="wired_charging_sounds_title">Wired charging</string>
+    <string name="wireless_charging_sounds_title">Wireless charging</string>
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker_title">Wakelock Blocker</string>
     <string name="wakelock_blocker_summary">Sistem oyanmalarınının qarşısını alın</string>
@@ -1574,7 +1581,7 @@
     <string name="reset_settings_title">Reset settings</string>
     <string name="reset_settings_message">This will reset most crdroid settings to their default values for the current user. Would you like to continue?</string>
     <!-- OTA -->
-    <string name="ota_crdroid_title">Updates</string>
+    <string name="ota_crdroid_title">Yeniləmələr</string>
     <string name="ota_crdroid_summary">Check and download latest update</string>
     <!-- Categories -->
     <string name="ota_category">OTA</string>
@@ -2010,6 +2017,11 @@
     <string name="rounded_medium">Medium</string>
     <string name="rounded_high">High</string>
     <string name="rounded_extreme">Extreme</string>
+    <!-- Signal / WiFi styles -->
+    <string name="signal_style_title">Signal bar style</string>
+    <string name="signal_style_summary">Set custom signal icon style</string>
+    <string name="wifi_style_title">WiFi bar style</string>
+    <string name="wifi_style_summary">Set custom wifi icon style</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">This will reset battery history stats. Would you like to continue?</string>
@@ -2036,8 +2048,8 @@
     <string name="full_gesture_mode_dt2s_title">Enable double tap to sleep</string>
     <string name="full_gesture_mode_dt2s_summary">Tap on an empty navbar space but not the home button to switch the screen off.</string>
     <!-- QS footer warnings -->
-    <string name="qs_footer_warnings_title">VPN alert</string>
-    <string name="qs_footer_warnings_summary">Display alert when network is monitored or connected via VPN</string>
+    <string name="qs_footer_warnings_title">Footer alerts</string>
+    <string name="qs_footer_warnings_summary">Display an alert at bottom of QS panel when network is monitored by external apps or VPN</string>
     <!-- QS footer icons -->
     <string name="qs_footer_users_icon_title">User account icon</string>
     <string name="qs_footer_users_icon_summary">Display multiuser accessibility icon when available</string>
@@ -2091,6 +2103,8 @@
     <string name="display_cutout_style_hide">Hide</string>
     <string name="stock_statusbar_in_hide">Stock statusbar height</string>
     <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
+    <string name="display_kill_notch_title">Kill notch</string>
+    <string name="display_kill_notch_summary">Kill notch completely for full screen apps</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
@@ -2163,11 +2177,6 @@
     <string name="aggressive_standby_summary">Restrict apps from running the background</string>
     <string name="aggressive_battery_saver_title">Auto-enable on battery saver</string>
     <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
-    <!-- Battery percent -->
-    <string name="battery_percentage_title">Battery percentage</string>
-    <string name="battery_percentage_off">Disabled</string>
-    <string name="battery_percentage_next">Enabled</string>
-    <string name="battery_percentage_inside">Enabled (inside icon)</string>
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Battery estimate</string>
     <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>
