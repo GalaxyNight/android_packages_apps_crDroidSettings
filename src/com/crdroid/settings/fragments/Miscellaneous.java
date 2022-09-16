@@ -45,7 +45,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.crdroid.settings.fragments.misc.GamingMode;
 import com.crdroid.settings.fragments.misc.SensorBlock;
 import com.crdroid.settings.fragments.misc.SmartCharging;
 
@@ -99,7 +98,6 @@ public class Miscellaneous extends SettingsPreferenceFragment {
                 Settings.System.SCREENSHOT_COMPRESSION, 100, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.TOAST_ICON, 1, UserHandle.USER_CURRENT);
-        GamingMode.reset(mContext);
         SensorBlock.reset(mContext);
         SmartCharging.reset(mContext);
     }

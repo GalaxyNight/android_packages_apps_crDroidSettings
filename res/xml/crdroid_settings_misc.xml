@@ -105,14 +105,6 @@
         android:summary="@string/hide_apps_from_recents_summary"
         android:fragment="com.crdroid.settings.fragments.misc.HAFRSettings" /> -->
 
-    <!-- Gaming Mode -->
-    <Preference
-        android:key="gaming_mode"
-        android:icon="@drawable/ic_gaming"
-        android:title="@string/gaming_mode_title"
-        android:summary="@string/gaming_mode_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.GamingMode"/>
-
     <!-- Keyboard
     <Preference
         android:key="ime_settings"
