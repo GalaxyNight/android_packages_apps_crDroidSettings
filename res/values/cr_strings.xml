@@ -2785,6 +2785,7 @@
     <string name="gaming_mode_notification_danmaku_summary">Display the notification content in the form of danmaku in the game</string>
     <string name="gaming_mode_quick_start_apps_title">Quick Start Apps</string>
     <string name="gaming_mode_quick_start_apps_summary">Choose the application that you want to launch with a floating ball</string>
+    <string name="gaming_mode_menu_opacity_title">Menu opacity level</string>
 
     <string name="gaming_mode_use_menu_overlay_title">Show menu overlay</string>
     <string name="gaming_mode_use_menu_overlay_summary">Show menu overlay when game is running. If this option is disabled, some game mode features will be disabled, such as Danmaku notifications</string>
