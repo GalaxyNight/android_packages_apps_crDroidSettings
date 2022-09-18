@@ -18,12 +18,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
-        android:key="gaming_category"
-        android:title="@string/gaming_title"
-        android:summary="@string/gaming_title_summary"
-        android:fragment="com.evolution.settings.fragments.GamingModeSettings" />
-
     <!-- Ad Away
     <Preference
         android:key="adaway"
