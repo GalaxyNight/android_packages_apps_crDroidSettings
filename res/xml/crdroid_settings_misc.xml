@@ -24,7 +24,6 @@
         settings:iconSpaceReserved="false"
         android:title="@string/gaming_title"
         android:summary="@string/gaming_title_summary"
-        android:layout="@layout/custom_card_pref"
         android:fragment="com.crdroid.settings.fragments.misc.GamingModeSettings" />
 
     <!-- Ad Away

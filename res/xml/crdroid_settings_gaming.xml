@@ -17,11 +17,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title=" " >
 
-   <!-- Title Header -->
-    <Preference
-        android:layout="@layout/crdroid_settings_gaming_mode_header"
-        android:selectable="false"/>
-
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_enabled"
             settings:iconSpaceReserved="false"
